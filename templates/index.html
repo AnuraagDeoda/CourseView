@@ -107,7 +107,7 @@
                 </div>
             </div>
             
-            <div class="course-viewer position-absolute top-0 left-0 w-100 h-100 z-3 d-none ">
+            <div class="course-viewer position-absolute top-0 left-0 w-100 h-100 bg-light d-none  ">
                 <Button class="close-modal-button text-primary"><i class="bi bi-x-circle"></i></Button>
                 <iframe id="courseIframe" class="modal-iframe h-100 w-100 p-3"></iframe>
             </div>
@@ -243,14 +243,25 @@
 
         // Filter functionality
         $('.filter-btn').on('click', function() {
-            $('.active').removeClass('active')
-            console.log($(this).addClass('active'))
+            // $('.active').removeClass('active')
+            if($(this).hasClass('active')){
+                $(this).removeClass('active')
+            }
+            else{
+                $(this).addClass('active')
+            }
             var style = $(this).data('style');
             if (style === 'all') {
                 $('.course-item').show();
+                $('.filter-btn').removeClass('active')
+                $(this).addClass('active')
             } else {
+                $('.filter-btn[data-style="' + "all" + '"]').removeClass('active');
                 $('.course-item').hide();
-                $('.course-item[data-style="' + style + '"]').show();
+                $('.active').toArray().forEach(ele => {
+                    const style1 = $(ele).data('style')
+                    $('.course-item[data-style="' + style1 + '"]').show();
+                })
             }
         });
 
