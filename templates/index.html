@@ -43,6 +43,10 @@
             margin-right: 10px;
             margin-bottom: 10px;
         }
+        .active{
+            background: #3d6ffd !important;
+            border-color: #3d6ffd !important;
+        }
     </style>
 </head>
 <body>
@@ -62,9 +66,9 @@
                     <div class="col">
                         <h3>Filter Courses</h3>
                         <div id="filter-buttons">
-                            <button class="btn btn-primary filter-btn" data-style="all">All</button>
+                            <button class="btn btn-outline-secondary filter-btn active" data-style="all">All</button>
                             {% for style in courses_by_style.keys() %}
-                                <button class="btn btn-primary filter-btn" data-style="{{ style }}">{{ style }}</button>
+                                <button class="btn btn-outline-secondary filter-btn" data-style="{{ style }}">{{ style }}</button>
                             {% endfor %}
                         </div>
                     </div>
@@ -233,6 +237,8 @@
 
         // Filter functionality
         $('.filter-btn').on('click', function() {
+            $('.active').removeClass('active')
+            console.log($(this).addClass('active'))
             var style = $(this).data('style');
             if (style === 'all') {
                 $('.course-item').show();
