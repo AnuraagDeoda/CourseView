@@ -67,16 +67,17 @@ def submit():
     <html>
         <body>
             <h2>New Contact Us Submission</h2>
-            <p><b>Name:</b> {data['f_name_text']} {data['l_name_text']}</p>
-            <p><b>Email:</b> {data['email_text']}</p>
-            <p><b>Message:</b> {data['w3review']}</p>
+            <p><b>Name:</b> {data['first_name']} {data['last_name']}</p>
+            <p><b>Email:</b> {data['email']}</p>
+            <p><b>Company:</b> {data['company_name']}</p>
+            <p><b>Message:</b> {data['message']}</p>
             <p>This request has come from <b>demos.mitrmedia.com/klett</b>.</p>
         </body>
     </html>
     """
 
     # Send email to sales team
-    msg = Message(subject, recipients=['anuraagd@mitrmedia.com'])
+    msg = Message(subject, recipients=['prashants@mitrmedia.com'])
     msg.body = "This is a plain text backup for email clients that don't render HTML."
     msg.html = body_html
 
