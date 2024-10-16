@@ -7,6 +7,7 @@
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <!-- Custom CSS -->
     <style>
         /* Custom styles */
@@ -54,6 +55,12 @@
             background: #3d6ffd !important;
             border-color: #3d6ffd !important;
         }
+        .text-size{
+            font-size: 15px;
+        }
+        .text-size h6{
+            font-size: 15px;
+        }
     </style>
 </head>
 <body>
@@ -63,6 +70,7 @@
               <a class="navbar-brand" href="#">
                 <img src="https://www.mitrmedia.com/wp-content/uploads/2023/10/Logo_1-1.svg" alt="Logo" height="30" class="d-inline-block align-text-top">
               </a>
+              <button type="button" id="contactUsBtn" class="btn btn-primary">Contact Us</button>
             </div>
         </nav>
     
@@ -91,7 +99,7 @@
                                 <div class=" course-thumbnail bg-secondary-subtle p-2 rounded h-100 d-flex flex-column " data-course-id="{{ course.id }}">
                                     <div class="img-wrapper" style="height: 200px;">
                                         <img src="{{ url_for_with_prefix('static', filename=course.thumbnail_url) }}" class="d-block w-100 h-100 object-fit-cover" alt="{{ course.title }}">
-                                        <!-- <img src="{{ url_for_with_prefix('static', filename=course.thumbnail_url) }}" class="d-block w-100 h-100 object-fit-cover" alt="{{ course.title }}"> -->
+                                        <!-- <img src="{{ url_for('static', filename=course.thumbnail_url) }}" class="d-block w-100 h-100 object-fit-cover" alt="{{ course.title }}"> -->
                                     </div>
                                     <div class="subtitle bg-light text-secondary mb-1 p-2">
                                         <span class="px-1">♥︎</span>
@@ -109,7 +117,7 @@
             
             <div class="course-viewer position-absolute top-0 left-0 w-100 h-100 bg-light d-none  ">
                 <Button class="close-modal-button text-primary"><i class="bi bi-x-circle"></i></Button>
-                <iframe id="courseIframe" class="modal-iframe h-100 w-100 p-3"></iframe>
+                <iframe id="courseIframe" class="modal-iframe h-100 w-100 p-3" allowfullscreen allow="autoplay; clipboard-write"></iframe>
             </div>
 
             <!-- Course Modal -->
@@ -167,6 +175,70 @@
               </div>
             </div>
             {% endif %}
+
+            <div class="modal fade" tabindex="-1" id="contactusModal">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <div class="modal-content rounded-3 overflow-hidden">
+                    <div class="modal-body p-4" style="background-color: #c3dff1;">
+                        <!-- <div class="row"> -->
+                            <!-- <h2 class="text-capitalize">connect with us</h2> -->
+                            <form class="row" id="contact-us-form">
+                                
+                                <div class="col-6 d-flex flex-column">
+                                    <h2 class="text-capitalize">connect with us</h2>
+                                    <div class="pt-2 text-size">
+                                        <h6 class="fw-bold m-0 ">Website:</h6>
+                                        <span class="">https://mitrmedia.com</span>
+                                    </div>
+                                    <div class="pt-4 text-size">
+                                        <h6 class="fw-bold m-0">Office address:</h6>
+                                        <span class="">A 615, Sagar Tech Plaza, Sakinaka, <br> Andheri E, Mumbai, Maharashtra 400072</span>
+                                    </div>
+                                    <div class="grp pt-4 text-size mt-auto">
+                                        <h6 class="fw-bold m-0">Have a question ?? Email us at:</h6>
+                                        <span class="">Primary email: sam@mitrmedia.com </span>
+                                        <br>
+                                        <span class="">Secondary email: rahulb@mitrmedia.com</span>
+                                        <br>
+                                        <span class="">Contact Person: Rahul Bansal</span>
+                                        <br>
+                                        <span class="">Phone: +91 9867488331</span>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="col">
+                                        <input required type="text" class="form-control" placeholder="First name" aria-label="First name" name="first_name">
+                                    </div>
+                                    <div class="col pt-3">
+                                    <input required type="text" class="form-control" placeholder="Last name" aria-label="Last name" name="last_name">
+                                    </div>
+                                    <div class="col-12 pt-3">
+                                    <input required type="email" class="form-control" placeholder="Email" aria-label="email" name="email">
+                                    </div>
+                                    <div class="col-12 pt-3">
+                                    <input required type="text" class="form-control" placeholder="Company Name" aria-label="Company" name="company_name">
+                                    </div>
+    
+                                    <div class="col-12 pt-3">
+                                    <textarea required class="form-control" placeholder="Message" aria-label="message" rows="4" name="message"></textarea>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12 pt-4 d-flex align-items-start text-size" style="transition: all 2s linear;">
+                                    <!-- <div class="feedback text-capitalize flex-grow-1 me-2 rounded d-flex align-items-center text-light ps-2 d-none" >something went wrong</div> -->
+                                     <p>Mitr media is committed to protecting and respecting your privacy, and we’ll only use your personal information to administer your account and to provide the products and services you requested from us.</p>
+                                    <button type="submit" class="btn btn-primary ms-5" id="contact_submit_btn">Submit</button>
+                                  </div>
+                            </form>
+                        <!-- </div> -->
+                    </div>
+                    <!-- <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
         </div>
     </div>
 
@@ -176,9 +248,26 @@
 <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
 <!-- Custom JS -->
 <script>
     $(document).ready(function() {
+        const toastStyle = {
+  text: "mail sent Successfully",
+  className: "rounded text-capitalize",
+  duration: 3000,
+  destination: "https://github.com/apvarun/toastify-js",
+  newWindow: true,
+  close: true,
+  gravity: "top", // `top` or `bottom`
+  position: "right", // `left`, `center` or `right`
+  stopOnFocus: true, // Prevents dismissing of toast on hover
+  style: {
+    background: "#17c600",
+  },
+  onClick: function(){} // Callback after click
+}
         {% if not email_provided %}
             // Show the email modal on page load
             $('#emailModal').modal('show');
@@ -267,6 +356,49 @@
 
         $('.course-viewer').children('.close-modal-button').first().on('click', function(){
             $('.course-viewer').addClass('d-none')
+        })
+
+        $('#contactUsBtn').on('click', function(){
+            $('#contactusModal').modal('show')
+        })
+
+        $('#contact-us-form').on('submit', function(e){
+            e.preventDefault();
+            $('#contact_submit_btn').prop('disabled', true)
+            $('#contact_submit_btn').html('Submitting...')
+            var data = {}
+            $(this).serializeArray().forEach(function(obj, index){
+                data[obj.name] = obj.value;
+            });
+
+            console.log(data)
+            $.ajax({
+                url: '{{ url_for_with_prefix('submit') }}',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(data),
+                success: function(response) {
+                    // $('#emailModal').modal('hide');
+                    // // Reload the page to update the email_provided variable
+                    // location.reload();
+                    if(response.success){
+                        Toastify({...toastStyle, text:response.message, style: {background: '#00d005'}}).showToast();
+                    }
+                    else{
+                        Toastify({...toastStyle, text:'Something went wrong', style: {background: '#ff3c3c'}}).showToast();
+                    }
+                    $('#contact-us-form').trigger('reset')
+                    $('#contact_submit_btn').prop('disabled', false)
+                    $('#contact_submit_btn').html('Submit')
+                },
+                error: function(xhr, status, error) {
+                    // alert('Error: ' + xhr.responseJSON.message);
+                    console.log(xhr)
+                    Toastify({...toastStyle, text:'Something went wrong', style: {background: '#ff3c3c'}}).showToast();
+                    $('#contact_submit_btn').prop('disabled', false)
+                    $('#contact_submit_btn').html('Submit')
+                }
+            });
         })
     });
 </script>
