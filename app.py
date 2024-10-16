@@ -1,12 +1,23 @@
 from pytz import timezone
 import pytz
-from flask import Flask, render_template, request, jsonify, make_response, url_for
+from flask import Flask, Response, render_template, request, jsonify, make_response, url_for
 from config import Config
 from extension import db
 from flask_migrate import Migrate
 from email_validator import validate_email, EmailNotValidError
+from flask_mail import Mail, Message
 
 app = Flask(__name__)
+# Direct configuration for Flask-Mail
+app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+app.config['MAIL_PORT'] = 587
+app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USE_SSL'] = False
+app.config['MAIL_USERNAME'] = 'mitrmedia3@gmail.com'
+app.config['MAIL_PASSWORD'] = 'nczustsbcycmxpyo'
+app.config['MAIL_DEFAULT_SENDER'] = 'mitrmedia3@gmail.com'
+
+mail = Mail(app)
 app.config.from_object(Config)
 db.init_app(app)
 migrate = Migrate(app, db)
@@ -15,6 +26,14 @@ from models import User, Course, UserAction
 
 with app.app_context():
     db.create_all()
+
+
+def url_for_with_prefix(endpoint, **values):
+    prefix = '/klett'
+    original_url = url_for(endpoint, **values)
+    return prefix + original_url
+
+
 
 @app.route('/')
 def index():
@@ -31,8 +50,44 @@ def index():
     courses_by_style = {}
     for course in courses:
         courses_by_style.setdefault(course.style, []).append(course)
-    return render_template('index.html', courses_by_style=courses_by_style, email_provided=bool(email))
+    return render_template(
+        'index.html',
+        courses_by_style=courses_by_style,
+        email_provided=bool(email)
+        # url_for_with_prefix=url_for_with_prefix
+    )
 
+
+@app.route('/submit', methods=['POST'])
+def submit():
+    data = request.json
+
+    subject = 'New Contact Us Submission'
+    body_html = f"""
+    <html>
+        <body>
+            <h2>New Contact Us Submission</h2>
+            <p><b>Name:</b> {data['f_name_text']} {data['l_name_text']}</p>
+            <p><b>Email:</b> {data['email_text']}</p>
+            <p><b>Message:</b> {data['w3review']}</p>
+            <p>This request has come from <b>demos.mitrmedia.com/klett</b>.</p>
+        </body>
+    </html>
+    """
+
+    # Send email to sales team
+    msg = Message(subject, recipients=['anuraagd@mitrmedia.com'])
+    msg.body = "This is a plain text backup for email clients that don't render HTML."
+    msg.html = body_html
+
+    try:
+        # Send the email
+        mail.send(msg)
+        return jsonify({"success": True, "message": "Email sent successfully!"}), 200
+    except Exception as e:
+        return jsonify({"success": False, "error": str(e)}), 500
+    
+    
 @app.route('/submit_email', methods=['POST'])
 def submit_email():
     data = request.get_json()
@@ -79,11 +134,51 @@ def get_course_url():
     data = request.get_json()
     course_id = data.get('course_id')
     course = Course.query.get(course_id)
+
     if course:
-        course_url = course.course_url  # Get the URL from the database
+        course_url = course.course_url
+
+        # Check if the course URL points to a local build
+        if course_url.startswith('build'):
+            # Use `url_for_with_prefix` to generate the correct URL to serve the local build files
+            course_url = url_for_with_prefix('static', filename=course_url)
+
         return jsonify({'status': 'success', 'course_url': course_url})
     else:
         return jsonify({'status': 'error', 'message': 'Course not found'}), 404
+
+
+
+
+# import requests
+
+# @app.route('/get_course_url/<int:course_id>', methods=['GET'])
+# def get_course_url(course_id):
+#     course = Course.query.get(course_id)
+    
+#     if course:
+#         course_url = course.course_url  # Get the external URL from the database
+        
+#         # Proxy the request
+#         try:
+#             # Fetch the external content
+#             resp = requests.get(course_url)
+            
+#             # Check if the external content was successfully fetched
+#             if resp.status_code == 200:
+#                 # Exclude certain headers like 'content-encoding' that could cause issues
+#                 excluded_headers = ['content-encoding', 'content-length', 'transfer-encoding', 'connection']
+#                 headers = [(name, value) for (name, value) in resp.headers.items() if name.lower() not in excluded_headers]
+                
+#                 # Return the external content with the original headers
+#                 return Response(resp.content, resp.status_code, headers)
+#             else:
+#                 return jsonify({'status': 'error', 'message': 'Failed to fetch the external course URL'}), 500
+#         except requests.RequestException as e:
+#             return jsonify({'status': 'error', 'message': f'An error occurred: {str(e)}'}), 500
+#     else:
+#         return jsonify({'status': 'error', 'message': 'Course not found'}), 404
+
 
 
 from collections import Counter

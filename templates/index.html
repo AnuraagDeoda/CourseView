@@ -90,8 +90,8 @@
                             <div class="col-sm-6 col-md-4 col-lg-3 course-item" data-style="{{ course.style }}">
                                 <div class=" course-thumbnail bg-secondary-subtle p-2 rounded h-100 d-flex flex-column " data-course-id="{{ course.id }}">
                                     <div class="img-wrapper" style="height: 200px;">
-                                        <img src="{{ url_for('static', filename='login_bg.png') }}" class="d-block w-100 h-100 object-fit-cover" alt="{{ course.title }}">
-                                        <!-- <img src="{{ url_for('static', filename=course.thumbnail_url) }}" class="d-block w-100 h-100 object-fit-cover" alt="{{ course.title }}"> -->
+                                        <img src="{{ url_for_with_prefix('static', filename=course.thumbnail_url) }}" class="d-block w-100 h-100 object-fit-cover" alt="{{ course.title }}">
+                                        <!-- <img src="{{ url_for_with_prefix('static', filename=course.thumbnail_url) }}" class="d-block w-100 h-100 object-fit-cover" alt="{{ course.title }}"> -->
                                     </div>
                                     <div class="subtitle bg-light text-secondary mb-1 p-2">
                                         <span class="px-1">♥︎</span>
@@ -154,7 +154,7 @@
                                     </div>
                                 </div>
                                 <div class="col p-0 d-none d-lg-block">
-                                    <img class="h-100 w-100" src="{{ url_for('static', filename='login_bg.png') }}"/>
+                                    <img class="h-100 w-100" src="{{ url_for_with_prefix('static', filename='login_bg.png') }}"/>
                                 </div>
                             </div>
                         </div>
@@ -189,7 +189,7 @@
             e.preventDefault();
             var email = $('#userEmail').val();
             $.ajax({
-                url: '{{ url_for('submit_email') }}',
+                url: '{{ url_for_with_prefix('submit_email') }}',
                 type: 'POST',
                 contentType: 'application/json',
                 data: JSON.stringify({email: email}),
@@ -209,14 +209,14 @@
             var courseId = $(this).data('course-id');
             // Record the course view
             $.ajax({
-                url: '{{ url_for('record_course_view') }}',
+                url: '{{ url_for_with_prefix('record_course_view') }}',
                 type: 'POST',
                 contentType: 'application/json',
                 data: JSON.stringify({course_id: courseId}),
                 success: function(response) {
                     // Get the course URL
                     $.ajax({
-                        url: '{{ url_for('get_course_url') }}',
+                        url: '{{ url_for_with_prefix('get_course_url') }}',
                         type: 'POST',
                         contentType: 'application/json',
                         data: JSON.stringify({course_id: courseId}),
