@@ -1,0 +1,34 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="35px" height="45px" viewBox="0 0 35 45">
+<defs/>
+
+<g id="Layer_1">
+<g transform="matrix( 0, -0.98199462890625, 1, 0, -347.7,646.65) ">
+<g transform="matrix( 0, 0.9999847412109375, -1.0183258056640625, 0, 658.5,347.65) ">
+<path stroke="#000000" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="butt" fill="none" d="
+M 17.25 39.97371826171877
+L 17.25 1.4795288085937273"/>
+</g>
+</g>
+
+<g transform="matrix( 0, -1, 1, 0, -347.7,658.5) ">
+<g>
+<g>
+<path fill="#000000" stroke="none" d="
+M 633 349.45
+L 614.75 365.35 616.8 367.1 634.65 351.35 633 349.45 Z"/>
+</g>
+</g>
+</g>
+
+<g transform="matrix( 0, -1, 1, 0, -347.7,658.5) ">
+<g>
+<g>
+<path fill="#000000" stroke="none" d="
+M 634.8 379.2
+L 616.8 363.8 614.75 365.45 633.15 381.1 634.8 379.2 Z"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

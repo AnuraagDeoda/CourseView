@@ -1,0 +1,15 @@
+{
+    "yesBtnTxt": "Yes",
+    "noBtnTxt": "No",
+    "controllertitle": "Controller",
+    "transofrm_Boundries":"Transform boundaries",
+    "convergence_Collisional":"Convergence: Collisional",
+    "convergence_Subduction":"Convergence: Subduction",
+    "divergent_boundries":"Divergent boundaries",
+    "crustTxt":"Crust",
+    "lithospereTxt":"Lithosphere",
+    "asthenospereTxt":"Asthenosphere",
+	"infoBoxHead": "Copyright",
+    "infoBoxBody": " "
+
+}

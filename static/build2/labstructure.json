@@ -1,0 +1,591 @@
+{
+  "labObj": {
+    "title": "title",
+    "lang": "en",
+    "fonts": [""],
+    "components": [
+      {
+        "id": "cannonActObj",
+        "ref": "CannonActClass",
+        "initdata": {
+          "x": 0,
+          "y": 0,
+          "jaws_text": "jaws_canonBase",
+          "jaws_text1": "jaws_flagBase",
+          "jaws_text2": "jaws_targetHit",
+          "jaws_text3": "jaws_targetMissed"
+        }
+      },
+      {
+        "id": "leftPanel",
+        "ref": "PanelCompClass",
+        "initdata": {
+          "x": 8,
+          "y": 248,
+          "width": 37,
+          "height": 246,
+          "headHeight": 37,
+          "headWidth": 37,
+          "headTextX": 12,
+          "isHeadItalic": true,
+          "isHeadBold": true,
+          "bgColor": "#e6e6e6",
+          "headText": "height1",
+          "alignContent": "center"
+        }
+      },
+      {
+        "id": "sliderh1",
+        "ref": "SliderCompClass",
+        "initdata": {
+          "x": -56,
+          "y": 387,
+          "width": 160,
+          "height": 4,
+          "min": 0,
+          "max": 240,
+          "decimal": 2,
+          "direction": "vertical",
+          "jaws_text": "jaws_h1_Slider"
+        }
+      },
+      {
+        "id": "rightPanel",
+        "ref": "PanelCompClass",
+        "initdata": {
+          "x": 1234,
+          "y": 248,
+          "width": 37,
+          "headWidth": 37,
+          "headHeight": 37,
+          "height": 246,
+          "headTextX": 12,
+          "isHeadItalic": true,
+          "isHeadBold": true,
+          "bgColor": "#d3d3d3",
+          "headText": "height2",
+          "alignContent": "center"
+        }
+      },
+      {
+        "id": "sliderh2",
+        "ref": "SliderCompClass",
+        "initdata": {
+          "x": 1170,
+          "y": 387,
+          "width": 160,
+          "height": 4,
+          "min": 0,
+          "max": 240,
+          "decimal": 2,
+          "direction": "vertical",
+          "jaws_text": "jaws_h2_Slider"
+        }
+      },
+      {
+        "id": "centerSliderPanel",
+        "ref": "PanelCompClass",
+        "initdata": {
+          "x": 517,
+          "y": 503,
+          "width": 246,
+          "height": 37,
+          "headWidth": 37,
+          "headHeight": 37,
+          "headTextX": 12,
+          "isHeadItalic": true,
+          "isHeadBold": true,
+          "bgColor": "#e6e6e6",
+          "headText": "distance",
+          "alignContent": "center"
+        }
+      },
+      {
+        "id": "sliderd",
+        "ref": "SliderCompClass",
+        "initdata": {
+          "x": 580,
+          "y": 518,
+          "width": 160,
+          "height": 4,
+          "min": 100,
+          "max": 600,
+          "decimal": 2,
+          "direction": "horizontal",
+          "jaws_text": "jaws_d_Slider"
+        }
+      },
+      {
+        "id": "vinit1",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 28,
+          "y": 620,
+          "width": 45,
+          "height": 45,
+          "fontColor": "#000000",
+          "text": "v",
+          "jaws_text": "jaws_label_v"
+        }
+      },
+
+      {
+        "id": "text_v",
+        "ref": "InputBoxClass",
+        "initdata": {
+          "x": 91,
+          "y": 610,
+          "width": 56,
+          "height": 30,
+          "numPadId": "numPad",
+          "jaws_text": "jaws_v",
+          "jaws_text1": "jaws_VText1"
+        }
+      },
+      {
+        "id": "m/s",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 157,
+          "y": 620,
+          "width": 45,
+          "height": 45,
+          "fontColor": "#000000",
+          "text": "ms",
+          "jaws_text": "jaws_label_ms"
+        }
+      },
+      {
+        "id": "sliderVelocity",
+        "ref": "SliderCompClass",
+        "initdata": {
+          "x": 33,
+          "y": 662,
+          "width": 160,
+          "height": 4,
+          "min": 10,
+          "max": 100,
+          "decimal": 1,
+          "direction": "horizontal",
+          "jaws_text": "jaws_v_Slider"
+        }
+      },
+
+      {
+        "id": "g",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 230,
+          "y": 620,
+          "width": 45,
+          "height": 45,
+          "fontColor": "#000000",
+          "text": "g",
+          "jaws_text": "jaws_label_g"
+        }
+      },
+      {
+        "id": "text_g",
+        "ref": "InputBoxClass",
+        "initdata": {
+          "x": 252,
+          "y": 610,
+          "width": 56,
+          "height": 30,
+          "numPadId": "numPad",
+          "jaws_text": "jaws_g",
+          "jaws_text1": "jaws_GText1"
+        }
+      },
+
+      {
+        "id": "m/s2_1",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 318,
+          "y": 617,
+          "width": 45,
+          "height": 45,
+          "fontColor": "#000000",
+          "text": "ms2",
+          "jaws_text": "jaws_label_ms2"
+        }
+      },
+      {
+        "id": "sliderGravity",
+        "ref": "SliderCompClass",
+        "initdata": {
+          "x": 233,
+          "y": 662,
+          "width": 160,
+          "height": 4,
+          "min": 0,
+          "max": 14,
+          "decimal": 1,
+          "direction": "horizontal",
+          "jaws_text": "jaws_g_Slider"
+        }
+      },
+
+      {
+        "id": "alpha",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 456,
+          "y": 620,
+          "width": 45,
+          "height": 45,
+          "fontColor": "#000000",
+          "text": "alpha",
+          "jaws_text": "jaws_label_alpha"
+        }
+      },
+      {
+        "id": "text_alpha",
+        "ref": "InputBoxClass",
+        "initdata": {
+          "x": 480,
+          "y": 610,
+          "width": 60,
+          "height": 30,
+          "numPadId": "numPad",
+          "jaws_text": "jaws_alpha",
+          "jaws_text1": "jaws_AlphaText1"
+        }
+      },
+      {
+        "id": "degree",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 550,
+          "y": 615,
+          "width": 45,
+          "height": 45,
+          "fontColor": "#000000",
+          "text": "degree",
+          "jaws_text": "jaws_label_degree"
+        }
+      },
+      {
+        "id": "d",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 456,
+          "y": 672,
+          "width": 45,
+          "height": 45,
+          "fontColor": "#000000",
+          "text": "distance",
+          "jaws_text": "jaws_label_distance"
+        }
+      },
+      {
+        "id": "text_d",
+        "ref": "InputBoxClass",
+        "initdata": {
+          "x": 480,
+          "y": 664,
+          "width": 60,
+          "height": 30,
+          "numPadId": "numPad",
+          "jaws_text": "jaws_d",
+          "jaws_text1": "jaws_DText1"
+        }
+      },
+      {
+        "id": "d_m",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 550,
+          "y": 672,
+          "width": 45,
+          "height": 45,
+          "fontColor": "#000000",
+          "text": "m",
+          "jaws_text": "jaws_label_m"
+        }
+      },
+      {
+        "id": "h1",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 591,
+          "y": 618,
+          "width": 45,
+          "height": 45,
+          "fontColor": "#000000",
+          "text": "height1",
+          "maxWidth": 50,
+          "jaws_text": "jaws_label_h1"
+        }
+      },
+      {
+        "id": "text_h1",
+        "ref": "InputBoxClass",
+        "initdata": {
+          "x": 616,
+          "y": 610,
+          "width": 60,
+          "height": 30,
+          "numPadId": "numPad",
+          "jaws_text": "jaws_h1",
+          "jaws_text1": "jaws_H1Text1"
+        }
+      },
+      {
+        "id": "h1_m",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 685,
+          "y": 620,
+          "width": 45,
+          "height": 45,
+          "fontColor": "#000000",
+          "text": "m",
+          "jaws_text": "jaws_label_m"
+        }
+      },
+
+      {
+        "id": "h2",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 591,
+          "y": 673,
+          "width": 45,
+          "height": 45,
+          "fontColor": "#000000",
+          "text": "height2",
+          "maxWidth": 50,
+          "jaws_text": "jaws_label_h2"
+        }
+      },
+      {
+        "id": "text_h2",
+        "ref": "InputBoxClass",
+        "initdata": {
+          "x": 616,
+          "y": 664,
+          "width": 60,
+          "height": 30,
+          "numPadId": "numPad",
+          "jaws_text": "jaws_h2",
+          "jaws_text1": "jaws_H2Text1"
+        }
+      },
+      {
+        "id": "h2_m",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 685,
+          "y": 672,
+          "width": 45,
+          "height": 45,
+          "fontColor": "#000000",
+          "text": "m",
+          "jaws_text": "jaws_label_m"
+        }
+      },
+
+      {
+        "id": "showGrid",
+        "ref": "CheckBoxCompClass",
+        "initdata": {
+          "x": 860,
+          "y": 613,
+          "width": 25,
+          "height": 25,
+          "txtMaxWidth": 200,
+          "fontSize": 16,
+          "text": "grid",
+          "jaws_text": "jaws_grid",
+          "checked": "true"
+        }
+      },
+      {
+        "id": "showPath",
+        "ref": "CheckBoxCompClass",
+        "initdata": {
+          "x": 940,
+          "y": 613,
+          "width": 25,
+          "height": 25,
+          "txtMaxWidth": 200,
+          "fontSize": 16,
+          "text": "path",
+          "jaws_text": "jaws_path",
+          "checked": "true"
+        }
+      },
+      {
+        "id": "showProtrac",
+        "ref": "CheckBoxCompClass",
+        "initdata": {
+          "x": 1025,
+          "y": 613,
+          "width": 26,
+          "height": 26,
+          "txtMaxWidth": 200,
+          "fontSize": 16,
+          "text": "protrac",
+          "jaws_text": "jaws_protactor",
+          "checked": "true"
+        }
+      },
+      {
+        "id": "showAccessibility",
+        "ref": "CheckBoxCompClass",
+        "initdata": {
+          "x": 1145,
+          "y": 613,
+          "width": 26,
+          "height": 26,
+          "txtMaxWidth": 200,
+          "fontSize": 16,
+          "text": "accessebility",
+          "jaws_text": "jaws_accessebility"
+        }
+      },
+      {
+        "id": "playReset",
+        "ref": "PlayPauseBtnCompClass",
+        "type": "global",
+        "initdata": {
+          "x": 884,
+          "y": 657,
+          "width": 44,
+          "height": 44,
+          "imageWidth": 44,
+          "imageHeight": 44,
+          "jaws_text": "jaws_play"
+        }
+      },
+      {
+        "id": "timer",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 935,
+          "y": 672,
+          "width": 45,
+          "height": 45,
+          "fontColor": "#000000",
+          "text": "time",
+          "jaws_text": "jaws_label_time"
+        }
+      },
+      {
+        "id": "colorPallet",
+        "ref": "ColorPalletCompClass",
+        "initdata": {
+          "x": 1083,
+          "y": 658,
+          "width": 45,
+          "height": 45,
+          "position": "top",
+          "text": "allPath_txt",
+          "jaws_text": "jaws_colorPallet",
+          "jaws_allPathText": "jaws_allPath",
+          "jaws_colorBoxText": "jaws_colorBox",
+          "jaws_uparrowText": "jaws_uparrow",
+          "jaws_downarrowText": "jaws_downarrow"
+        }
+      },
+
+      {
+        "id": "delButton",
+        "ref": "ButtonCompClass",
+        "initdata": {
+          "x": 1147,
+          "y": 657,
+          "width": 45,
+          "height": 45,
+          "imgList": ["deleteBtnUp.png"],
+          "jaws_text": "jaws_del"
+        }
+      },
+
+      {
+        "id": "bottomPanel",
+        "ref": "PanelCompClass",
+        "initdata": {
+          "x": 0,
+          "y": 550,
+          "width": 1280,
+          "height": 170,
+          "headWidth": 1280,
+          "headTextX": 30,
+          "headText": "collapseHead",
+          "seperators": [426, 853],
+          "copyRight": true,
+          "alignContent": "left",
+          "jaws_coprright": "jaws_copyright"
+        }
+      },
+
+      {
+        "id": "protractor",
+        "ref": "ProtactorCompClass",
+        "initdata": {
+          "imgList": ["protractorbg.png"],
+          "width": 226,
+          "height": 241,
+          "x": 108,
+          "y": 250,
+          "jaws_text": "jaws_protact"
+        }
+      },
+
+      {
+        "id": "confBox",
+        "ref": "ConfBoxClass",
+        "initdata": {
+          "x": 0,
+          "y": 0,
+          "width": 410,
+          "height": 180,
+          "bodyText": "deleteConfirmation",
+          "headText": "confirmHeader",
+          "jaws_yesText": "jaws_yes",
+          "jaws_noText": "jaws_no"
+        }
+      },
+      {
+        "id": "numPad",
+        "ref": "NumberPadClass",
+        "initdata": {
+          "x": 300,
+          "y": 150
+        }
+      },
+      {
+        "id": "infoBoxObj",
+        "ref": "MsgBoxClass",
+        "initdata": {
+          "x": 0,
+          "y": 0,
+          "width": 416,
+          "height": 213,
+          "headText": "alert",
+          "bodyText": "timeout",
+          "visible": false
+        }
+      },
+
+      {
+        "id": "msgBoxObj",
+        "ref": "MsgBoxClass",
+        "initdata": {
+          "x": 0,
+          "y": 0,
+          "width": 645,
+          "height": 345,
+          "headText": "infoBoxHead",
+          "bodyText": "infoBoxBody",
+          "visible": false,
+          "jaws_text": "jaws_msgBox"
+        }
+      }
+    ],
+    "globalSfx": []
+  }
+}

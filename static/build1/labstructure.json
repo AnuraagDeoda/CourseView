@@ -1,0 +1,641 @@
+{
+  "labObj": {
+    "title": "title",
+    "lang": "en",
+    "fonts": ["Polo22Klett-Regular"],
+    "components": [
+       {
+        "id": "graphComp",
+        "ref": "graphPluginAdvClass",
+        "initdata": {
+          "x": 301,
+          "y": 114,
+          "width": 978,
+          "height": 490,
+          "visible": true,
+          "showQuadrants": "1234",
+          "showPointText": true,
+          "alignXLine": "left",
+          "alignYLine": "bottom",
+          "panX": true,
+          "panY": true
+        }
+      },
+      {
+        "id": "geoDrawHelpObj",
+        "ref": "GeoDrawClass",
+        "initdata":{
+          "shapesEditable":false, 
+          "shapes":{
+            "segment":{
+              "label":{
+                "visible":true
+              },
+              "segDistanceLabel":true
+            },
+            "line":{
+              "label":{
+                "visible":false
+              }
+            },
+            "circle":{
+              "digit":1
+            }
+          }
+        }
+      },
+      {
+        "id": "geoDrawObjAns",
+        "ref": "GeoDrawClass",
+        "initdata":{
+          "shapesEditable":false,
+          "shapes":{
+            "segment":{
+              "color":{
+                "stroke":"rgb(255,255,255)"
+              },
+              "label":{
+                "visible":true
+              }
+            },
+            "line":{
+              "label":{
+                "visible":false
+              }
+            },
+            "snapToGrid":false
+          }
+        }
+      },
+      {
+        "id": "planComp",
+        "ref": "graphPluginAdvClass",
+        "initdata": {
+          "x": 301,
+          "y": 154,
+          "width": 300,
+          "height": 200,
+          "visible": true,
+          "showQuadrants": "1234",
+          "showPointText": true,
+          "alignXLine": "left",
+          "alignYLine": "bottom",
+          "panX": true,
+          "panY": true,
+          "sections": {
+            "axis": {
+              "origin": {
+                "visible": false
+              }
+            }
+          }
+        }
+      },
+      
+      {
+        "id": "planDrawObj",
+        "ref": "PlanDrawClass",
+        "initdata":{
+          "shapesEditable":true, 
+          "ignorePointToColor" : true,
+          "shapes":{
+            "segment":{
+              "label":{
+                "visible":true
+              }
+            },
+            "angle":{
+              "dotOn90":false
+            }
+          },
+          "snapToGrid":false
+        }
+      },
+      {
+        "id": "planDrawObjAns",
+        "ref": "PlanDrawClass",
+        "initdata":{
+          "shapesEditable":true, 
+          "shapes":{
+            "segment":{
+              "label":{
+                "visible":true
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": "dummyComp",
+        "ref": "graphPluginAdvClass",
+        "initdata": {
+          "x": 301,
+          "y": 114,
+          "width": 300,
+          "height": 40,
+          "visible": true,
+          "clickable":true
+        }
+      },
+      
+      {
+        "id": "logicObj",
+        "ref": "Gamar_43_LogicClass"
+      },
+      {
+        "id": "controllerpanel",
+        "ref": "RectDrawClass",
+        "initdata": {
+          "x": 0,
+          "y": 44,
+          "width": 1280,
+          "height": 69,
+          "bgColor": "rgba(255,255,255,1)"
+        }
+      },
+      {
+        "id": "planLabel",
+        "ref": "LabelNewCompClass",
+        "initdata": {
+          "x": 301,
+          "y": 114,
+          "fontSize": 20,
+          "bgWidth": 300,
+          "bgHeight": 40,
+          "textY": 10,
+          "align": "center",
+          "text": "planFigure",
+          "bgColor": "#999999",
+          "fontColor": "#ffffff"
+        }
+      },
+      {
+        "id": "genLabel",
+        "ref": "LabelNewCompClass",
+        "initdata": {
+          "x": 21,
+          "y": 69,
+          "fontSize": 16,
+          "text": "question"
+        }
+      },
+      {
+        "id": "draggable",
+        "ref": "ContainerCompClass",
+        "initdata": {
+          "x": 596,
+          "y": 264 ,
+          "width": 350,
+          "height": 175,
+          "dragMinX": 301,
+          "dragMinY": 114,
+          "dragMaxX": 1278,
+          "dragMaxY": 601,
+          "visible": false
+        }
+      },
+      {
+        "id": "segmentLabel",
+        "ref": "LabelNewCompClass",
+        "initdata": {
+          "x": 351,
+          "y": 105,
+          "fontSize": 16,
+          "visible":false,
+          "text": "segmentQuestion"
+        }
+      },
+      {
+        "id": "segInput",
+        "ref": "InputBoxClass",
+        "initdata": {
+          "x": 950,
+          "y": 480,
+          "width": 40,
+          "height": 30,
+          "strokeStyle": "rgba(0,0,0,0.5)",
+          "shadowVisible": false,
+          "filterType": 4,
+          "maxLength": 3,
+          "borderWidth": 1,
+          "showComponent": false,
+          "textAlign":"center",
+          "textPadding":2
+        }
+      },
+      {
+        "id": "angleDraggable",
+        "ref": "ContainerCompClass",
+        "initdata": {
+          "x": 496,
+          "y": 214,
+          "width": 578,
+          "height": 290,
+          "dragMinX": 301,
+          "dragMinY": 114,
+          "dragMaxX": 1278,
+          "dragMaxY": 601,
+          "visible": false
+        }
+      },
+      {
+        "id": "angleLabel",
+        "ref": "LabelNewCompClass",
+        "initdata": {
+          "x": 351,
+          "y": 105,
+          "fontSize": 16,
+          "visible": false,
+          "text": "angleQuestion"
+        }
+      },
+      {
+        "id": "radio",
+        "ref": "RadioButtonCompClass",
+        "initdata": {
+          "x": 441,
+          "y": 492,
+          "width": 290,
+          "height": 148,
+          "show": false,
+          "data": [
+            "radio1",
+            "radio2"
+          ]
+        }
+      },
+      {
+        "id": "angleInput",
+        "ref": "InputBoxClass",
+        "initdata": {
+          "x": 950,
+          "y": 480,
+          "width": 40,
+          "height": 30,
+          "strokeStyle": "rgba(0,0,0,0.5)",
+          "shadowVisible": false,
+          "filterType": 10,
+          "maxLength": 3,
+          "borderWidth": 1,
+          "showComponent": false,
+          "textAlign": "center",
+          "textPadding": 2,
+          "useCommaAsDecimal": true
+        }
+      },
+      {
+        "id": "circleDraggable",
+        "ref": "ContainerCompClass",
+        "initdata": {
+          "x": 596,
+          "y": 264 ,
+          "width": 350,
+          "height": 175,
+          "dragMinX": 301,
+          "dragMinY": 114,
+          "dragMaxX": 1278,
+          "dragMaxY": 601,
+          "visible": false
+        }
+      },
+      {
+        "id": "radiusLabel",
+        "ref": "LabelNewCompClass",
+        "initdata": {
+          "x": 351,
+          "y": 105,
+          "fontSize": 16,
+          "visible":false,
+          "text": "radiusQuestion"
+        }
+      },
+      {
+        "id": "radInput",
+        "ref": "InputBoxClass",
+        "initdata": {
+          "x": 950,
+          "y": 480,
+          "width": 40,
+          "height": 30,
+          "strokeStyle": "rgba(0,0,0,0.5)",
+          "shadowVisible": false,
+          "filterType": 10,
+          "maxLength": 3,
+          "borderWidth": 1,
+          "showComponent": false,
+          "textAlign":"center",
+          "textPadding":2,
+          "enterToSubmit": true,
+          "useCommaAsDecimal": true
+        }
+      },
+      {
+        "id":"circleSubmitBtn",
+        "ref":"ButtonCompClass",
+        "initdata": {
+          "x": 950,
+          "y": 480,
+          "width": 100,
+          "height": 30,
+          "visible":false,
+          "text":"submitBtn"
+          
+        }
+      },
+      {
+        "id":"angleSubmitBtn",
+        "ref":"ButtonCompClass",
+        "initdata": {
+          "x": 950,
+          "y": 480,
+          "width": 100,
+          "height": 30,
+          "visible":false,
+          "text":"submitBtn"
+          
+        }
+      },
+      {
+        "id":"segSubmitBtn",
+        "ref":"ButtonCompClass",
+        "initdata": {
+          "x": 950,
+          "y": 480,
+          "width": 100,
+          "height": 30,
+          "visible":false,
+          "text":"submitBtn"
+          
+        }
+      },
+     
+      {
+        "id": "stepsTable",
+        "ref": "TaskTableCompClass",
+        "initdata": {
+          "x": 0,
+          "y": 114,
+          "width": 300,
+          "height": 490,
+          "visible": true,
+          "values":{
+            "textW":215
+          },
+          "textWrapper":"new"
+        }
+      },
+      {
+        "id": "zoomControls",
+        "ref": "ZoomControlsCompClass",
+        "initdata": {
+          "x": 1067,
+          "y": 573
+        }
+      },
+      {
+        "id": "zoomPlanControls",
+        "ref": "ZoomControlsCompClass",
+        "initdata": {
+          "x": 1067,
+          "y": 673,
+          "visible": false
+        }
+      },
+      {
+        "id": "geoTools",
+        "ref": "ToolPanelCompClass",
+        "initdata": {
+          "buttons": {
+            "move": {
+              "text": "move",
+              "info": "moveInfo",
+              "visible": true
+            },
+            "point": {
+              "text": "point",
+              "info": "pointInfo",
+              "visible": true
+            },
+            "angleSize": {
+              "text": "angleSize",
+              "info": "angleSizeInfo",
+              "visible": true
+            },
+            "parallelLine":{
+              "text": "parallelLine",
+              "info": "parallelLineInfo",
+              "visible": true
+            },
+            "circleSize": {
+              "text": "circle",
+              "info": "circleInfo",
+              "visible": true
+            },
+            "segment": {
+              "text": "segment",
+              "info": "segmentInfo",
+              "visible": true
+            },
+            "brush2":{
+              "text": "colourElements",
+              "info": "colourInfo",
+              "visible": true
+            }
+          }
+        }
+      },
+      {
+        "id": "timeLine",
+        "ref": "TimeLineCompClass",
+        "initdata": {
+          "x": 1185,
+          "y": 629,
+          "totalTasks": 5
+        }
+      },
+      
+      {
+        "id": "showSolutionBtn",
+        "ref": "ButtonCompClass",
+        "initdata": {
+          "x": 890,
+          "y": 675,
+          "width": 190,
+          "imageWidth": 29,
+          "imageHeight": 13,
+          "toggleMode": true,
+          "text": "showSolution",
+          "textPadding": 27,
+          "shape": [
+            [
+              "beginPath()",
+              "strokeStyle='rgba(255,255,255,1)'",
+              "arc(10, 0, 8, 0, 2 * Math.PI)",
+              "stroke()",
+              "closePath()",
+              "beginPath()",
+              "strokeStyle='rgba(255,255,255,1)'",
+              "arc(10, 0, 2, 0, 2 * Math.PI)",
+              "stroke()",
+              "closePath()"
+            ]
+          ]
+        }
+      },
+      
+      {
+        "id": "nextTaskBtn",
+        "ref": "ButtonCompClass",
+        "initdata": {
+          "x": 1085,
+          "y": 675,
+          "width": 190,
+          "imageWidth": 29,
+          "imageHeight": 16,
+          "textPadding": 22,
+          "text": "nextTask",
+          "shape": [
+            [
+              "beginPath()",
+              "strokeStyle='rgba(255,255,255,1)'",
+              "lineJoin = 'miter'",
+              "lineWidth = 1",
+              "moveTo(2, 0)",
+              "lineTo(18, 0)",
+              "stroke()",
+              "lineWidth = 2",
+              "moveTo(17, -6.5)",
+              "lineTo(27, 0)",
+              "stroke()",
+              "moveTo(17, 6.5)",
+              "lineTo(27, 0)",
+              "stroke()",
+              "closePath()"
+            ]
+          ]
+        }
+      },
+      
+      
+      {
+        "id": "rightClickOptions",
+        "ref": "MenuCompClass",
+        "initdata": {
+          "text": {
+            "showAxis": "showAxis",
+            "showGrid": "showGrid",
+    
+            "snapToGrid": "snapToGrid"
+            
+          },
+          "data":{
+            "showAxis": {
+              "visible": true,
+              "toggle": true,
+              "selected": true
+            },
+            "showGrid": {
+              "visible": true,
+              "toggle": true,
+              "selected": true
+            },
+            "snapToGrid": {
+              "visible": true,
+              "toggle": true,
+              "selected": true
+            }
+          }
+          
+        }
+      },
+      {
+        "id": "submitBox",
+        "ref": "MsgBoxClass",
+        "initdata": {
+          "x": 1280,
+          "y": 604,
+          "maxWidth": 308,
+          "type": "correct",
+          "position": "bottom-right",
+          "headText": "alertHead",
+          "bodyText": "submitAlert",
+          "visible": false,
+          "minX": 300,
+          "minY": 114,
+          "maxY": 604
+        }
+      },
+      {
+        "id": "wrongAlertBox",
+        "ref": "MsgBoxClass",
+        "initdata": {
+          "x": 1280,
+          "y": 604,
+          "maxWidth": 290,
+          "type": "incorrect",
+          "position": "bottom-right",
+          "headText": "alertHead",
+          "bodyText": "alertBody",
+          "visible": false,
+          "minX": 300,
+          "minY": 114,
+          "maxY": 604
+        }
+      },
+      {
+        "id": "completeAlertBox",
+        "ref": "MsgBoxClass",
+        "initdata": {
+          "x": 1280,
+          "y": 604,
+          "maxWidth": 308,
+          "type": "correct",
+          "position": "bottom-right",
+          "headText": "alertHead",
+          "bodyText": "completeAlert",
+          "visible": false,
+          "minX": 300,
+          "minY": 114,
+          "maxY": 604
+        }
+      },
+      {
+        "id": "stepsEndAlertBox",
+        "ref": "MsgBoxClass",
+        "initdata": {
+          "x": 1280,
+          "y": 604,
+          "maxWidth": 308,
+          "type": "correct",
+          "position": "bottom-right",
+          "headText": "alertHead",
+          "bodyText": "helpCompleteAlert",
+          "visible": false,
+          "minX": 300,
+          "minY": 114,
+          "maxY": 604
+        }
+      },
+      {
+        "id": "panel",
+        "ref": "PanelCompClass",
+        "initdata": {
+          "headText": "controllertitle"
+        }
+      },
+      {
+        "id": "numPad",
+        "ref": "NumberPadClass",
+        "initdata": {
+          "x": 200,
+          "y": 200
+        }
+      },
+      {
+        "id": "mathObj",
+        "ref": "Gamar_43_MathClass"
+      }
+    ],
+    "globalSfx": []
+  }
+}

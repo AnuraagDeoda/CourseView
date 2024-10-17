@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Klett</title>
+    <link rel="stylesheet" href="css/style.css?v=1.0" />
+    <!-- <link rel="stylesheet" href="../com/dist/main/css/perfect-scrollbar.min.css"> -->
+    <!-- BEGIN TRACKJS, but do not include on iPad for now for memory conservation. -->
+    <script>
+      if (
+        navigator.userAgent &&
+        navigator.userAgent.toUpperCase().indexOf("IPAD") < 0
+      ) {
+        var env = "prod";
+        // document.write(unescape("%3Cscript>window._trackJs = {token: '7b0e187156f54c728faa8a4fd6cbceb5', application: 'klett_" + env + "'}%3C/script%3E"));
+      }
+    </script>
+    <!-- END TRACKJS -->
+    <script src="app-min.js"></script>
+  </head>
+
+  <body>
+    <div
+      tabindex="-1"
+      aria-hidden="true"
+      hidden
+      style="
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+        font-family: Polo22Klett-Regular;
+      "
+    >
+      d
+    </div>
+    <div
+      tabindex="-1"
+      aria-hidden="true"
+      hidden
+      style="
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+        font-family: OpenSans-Regular;
+      "
+    >
+      d
+    </div>
+    <div
+      tabindex="-1"
+      aria-hidden="true"
+      hidden
+      style="
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+        font-family: OpenSans-Bold;
+      "
+    >
+      d
+    </div>
+    <div
+      tabindex="-1"
+      aria-hidden="true"
+      hidden
+      style="
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+        font-family: OpenSans-Italic;
+      "
+    >
+      d
+    </div>
+    <div
+      tabindex="-1"
+      aria-hidden="true"
+      hidden
+      style="
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+        font-family: OpenSans-BoldItalic;
+      "
+    >
+      d
+    </div>
+    <script>
+      var tempResumeLocation = 0;
+      window.onload = function () {
+        var player;
+        if (typeof trackJs !== "undefined") {
+          player = trackJs.watchAll(new PlayerClass());
+        } else {
+          player = new PlayerClass();
+        }
+      };
+    </script>
+  </body>
+</html>

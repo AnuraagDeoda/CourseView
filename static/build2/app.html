@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Klett</title>
+    <link rel="stylesheet" href="css/style.css?v=1.0" />
+    <style data="test" type="text/css">
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #ff6600;
+        cursor: pointer;
+      }
+      .slider::-webkit-slider-thumb:active {
+        background: #ff0000;
+      }
+
+      .slider.acc::-webkit-slider-thumb {
+        background: #db5800 !important;
+      }
+
+      .slider.acc::-webkit-slider-thumb:active {
+        background: #ff0000 !important;
+      }
+
+      .slider::-moz-range-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #ff6600;
+        cursor: pointer;
+      }
+
+      .slider::-moz-range-thumb:active {
+        background: #ff0000;
+      }
+
+      .slider.acc::-moz-range-thumb {
+        background: #db5800 !important;
+      }
+
+      .slider.acc::-moz-range-thumb:active {
+        background: #ff0000 !important;
+      }
+    </style>
+    <!-- <link rel="stylesheet" href="../com/dist/main/css/perfect-scrollbar.min.css"> -->
+    <!-- BEGIN TRACKJS, but do not include on iPad for now for memory conservation. -->
+    <script>
+      if (
+        navigator.userAgent &&
+        navigator.userAgent.toUpperCase().indexOf("IPAD") < 0
+      ) {
+        var env = "prod";
+        // document.write(unescape("%3Cscript>window._trackJs = {token: '7b0e187156f54c728faa8a4fd6cbceb5', application: 'klett_" + env + "'}%3C/script%3E"));
+      }
+    </script>
+    <!-- END TRACKJS -->
+    <script src="app-min.js"></script>
+  </head>
+
+  <body>
+    <!-- <div
+      style="
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+        font-family: Polo22Klett-Regular;
+      "
+    >
+      d
+    </div> -->
+    <div
+      style="
+        position: absolute;
+        left: -9999px;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+      "
+      aria-atomic="true"
+      aria-live="polite"
+      id="descMsg"
+    >
+      In this activity users will use a cannon to launch a shell to hit a
+      target. The trajectory of the shell (the path it follows), is established
+      by altering a range of parameters:- Height from where shell is launched
+      (h1 m) - Initial velocity of the shell (V initial m/s) - Angle at which
+      the shell is launched / angle of attack (ao) - Acceleration due to gravity
+      (g m/s2) - Target distance (d) (distance between cannon stand and flag
+      stand – note, the flag stand is moveable, the cannon stand is not) -
+      Target height (h2) Note in this activity, the effect of air resistance is
+      ignored. Once the parameters are set, users can then test the designed
+      path/shell trajectory by firing the cannon with the click of a button. The
+      activity will allow students to manipulate the different parameters, and
+      through a process of trial and error, arrive at the exact parameters
+      required to obtain the right trajectory to hit the target within a time
+      limit.
+    </div>
+    <script>
+      var tempResumeLocation = 0;
+      window.onload = function () {
+        var player;
+        if (typeof trackJs !== "undefined") {
+          player = trackJs.watchAll(new PlayerClass());
+        } else {
+          player = new PlayerClass();
+        }
+      };
+
+      // const descmsg = document.getElementById("descMsg");
+    </script>
+  </body>
+</html>

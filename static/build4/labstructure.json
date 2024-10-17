@@ -1,0 +1,255 @@
+{
+  "labObj": {
+    "title": "title",
+    "lang": "en",
+    "components": [
+      {
+        "id": "viewObj",
+        "ref": "AlkalineMetalAndWaterViewClass",
+        "initdata": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "panel",
+        "ref": "PanelCompClass",
+        "initdata": {
+          "x": 0,
+          "y": 562,
+          "width": 1280,
+          "height": 158,
+          "headWidth": 1280,
+          "border": "1px solid",
+          "padding": "50px",
+          "boxShadow": "5px 10px rgba(136, 136, 136, 1)",
+          "headTextX": 30,
+          "headFontSize": 19,
+          "seperators": [
+            426,
+            854
+          ],
+          "headText": "controllertitle",
+          "copyRight": true
+        }
+      },
+      {
+        "id": "dropDown",
+        "ref": "DropDownCompClass",
+        "initdata": {
+          "x": 30,
+          "y": 626,
+          "width": 255,
+          "headHeight": 28,
+          "openLabel": "up",
+          "data": [
+            "dropDown5",
+            "dropDown4",
+            "dropDown3",
+            "dropDown2",
+            "dropDown1"
+          ]
+        }
+      },
+      {
+        "id": "universalIndicatorCheckBox",
+        "ref": "CheckBoxCompClass",
+        "initdata": {
+          "x": 456,
+          "y": 628,
+          "txtMaxWidth": 200,
+          "height": 25,
+          "width": 25,
+          "text": "universalIndicator"
+        }
+      },
+      {
+        "id": "beforePh",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 456,
+          "y": 670,
+          "fontColor": "rgba(0,0,0,1)",
+          "text": "beforePh"
+        }
+      },
+      {
+        "id": "text1",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 30,
+          "y": 669,
+          "fontColor": "rgba(0,0,0,1)",
+          "text": "text1"
+        }
+      },
+      {
+        "id": "text2",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 30,
+          "y": 690,
+          "fontColor": "rgba(0,0,0,1)",
+          "text": "text2"
+        }
+      },
+      {
+        "id": "beforePhInput",
+        "ref": "InputBoxClass",
+        "initdata": {
+          "x": 535,
+          "y": 662,
+          "width": 81,
+          "height": 33,
+          "fillStyle": "rgba(139, 138, 138, 1)",
+          "fontColor": "rgba(255,255,255,1)"
+        }
+      },
+      {
+        "id": "afterPh",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 639,
+          "y": 670,
+          "fontColor": "rgba(0,0,0,1)",
+          "text": "afterPh"
+        }
+      },
+      {
+        "id": "afterPhInput",
+        "ref": "InputBoxClass",
+        "initdata": {
+          "x": 704,
+          "y": 662,
+          "width": 81,
+          "height": 33,
+          "fillStyle": "rgba(139, 138, 138, 1)",
+          "fontColor": "rgba(255,255,255,1)"
+        }
+      },
+      {
+        "id": "playPauseBtn",
+        "ref": "PlayPauseBtnCompClass",
+        "initdata": {
+          "x": 982,
+          "y": 639,
+          "width": 45,
+          "height": 45,
+          "imageWidth": 45,
+          "imageHeight": 45,
+          "images": [
+            "playUp.png",
+            "playDown.png",
+            "pauseUp.png",
+            "pauseDown.png"
+          ]
+        }
+      },
+      {
+        "id": "saveBtn",
+        "ref": "ButtonCompClass",
+        "initdata": {
+          "x": 1044,
+          "y": 639,
+          "width": 45,
+          "height": 45,
+          "imgList": [
+            "save_btn.png"
+          ]
+        }
+      },
+      {
+        "id": "libraryBtn",
+        "ref": "ButtonCompClass",
+        "initdata": {
+          "x": 1108,
+          "y": 639,
+          "width": 45,
+          "height": 45,
+          "imgList": [
+            "lib_btn.png"
+          ]
+        }
+      },
+      {
+        "id": "records",
+        "ref": "MonitorCompClass",
+        "initdata": {
+          "x": 0,
+          "y": 0,
+          "headText": "record",
+          "headingText": [
+            "sr",
+            "metal",
+            "before",
+            "after",
+            "snap",
+            "del"
+          ],
+          "headingPixel": [
+            75,
+            303,
+            563,
+            770,
+            986,
+            1186
+          ],
+          "visible": false
+        }
+      },
+      {
+        "id": "saveBoxObj",
+        "ref": "MsgBoxClass",
+        "initdata": {
+          "x": 0,
+          "y": 0,
+          "width": 416,
+          "height": 213,
+          "bodyFontSize": 20,
+          "headText": "saveBoxHead",
+          "bodyText": "saveBoxBody",
+          "visible": false
+        }
+      },
+      {
+        "id": "confBox",
+        "ref": "ConfBoxClass",
+        "initdata": {
+          "x": 0,
+          "y": 0,
+          "width": 410,
+          "height": 240,
+          "bodyFontSize": 20,
+          "bodyText": "deleteConfirmation",
+          "headText": "confirmHeader",
+          "visible": false
+        }
+      },
+      {
+        "id": "alkalineJS",
+        "ref": "CreateJSCompClass",
+        "initdata": {
+          "x": 0,
+          "y": 0,
+          "src": [
+            "assets/js/AlkalineMetalsAndWater.js"
+          ]
+        }
+      },
+      {
+        "id": "msgBoxObj",
+        "ref": "MsgBoxClass",
+        "initdata": {
+          "x": 0,
+          "y": 0,
+          "width": 645,
+          "height": 345,
+          "headText": "infoBoxHead",
+          "bodyText": "infoBoxBody",
+          "visible": false
+        }
+      }
+    ],
+    "globalSfx": []
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "labObj": {
+    "title": "title",
+    "lang": "en",
+    "fonts": [
+      "MyriadPro-Regular"
+    ],
+    "components": [
+      {
+        "id": "rayTracingLensesViewObj",
+        "ref": "RayTracingLensesViewClass",
+        "initdata": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "panel",
+        "ref": "PanelCompClass",
+        "initdata": {
+          "x": 0,
+          "y": 544,
+          "width": 1280,
+          "height": 176,
+          "headWidth": 1280,
+          "border": "1px solid",
+          "padding": "50px",
+          "boxShadow": "5px 10px rgba(136, 136, 136, 1)",
+          "headTextX": "30",
+          "headFontSize": 18,
+          "seperators": [
+            237,
+            754,
+            1026
+          ],
+          "headText": "controllertitle",
+          "copyRight": true
+        }
+      },
+      {
+        "id": "radio",
+        "ref": "RadioButtonCompClass",
+        "initdata": {
+          "x": 30,
+          "y": 602,
+          "margin": 32,
+          "textMaxWidth": 0,
+          "bgColor": "rgba(255, 255, 255, 1)",
+          "downColor": "rgba(255, 102, 0, 1)",
+          "data": [
+            "cancave",
+            "convex"
+          ],
+          "fontSize": 16
+        }
+      },
+      {
+        "id": "ObjectText",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 267,
+          "y": 608,
+          "fontColor": "rgba(0, 0, 0, 1)",
+          "text": "Object"
+        }
+      },
+      {
+        "id": "DistanceObjectMirrorText",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 267,
+          "y": 666,
+          "fontColor": "rgba(0, 0, 0, 1)",
+          "text": "distance"
+        }
+      },
+      {
+        "id": "objectSizeSlider0",
+        "ref": "SliderCompClass",
+        "initdata": {
+          "x": 438,
+          "y": 602,
+          "width": 180,
+          "min": 0.5,
+          "max": 10,
+          "decimal": 1,
+          "direction": "horizontal"
+        }
+      },
+      {
+        "id": "objectSizeSlider1",
+        "ref": "SliderCompClass",
+        "initdata": {
+          "x": 438,
+          "y": 602,
+          "width": 180,
+          "min": 0.5,
+          "max": 10,
+          "decimal": 1,
+          "direction": "horizontal"
+        }
+      },
+      {
+        "id": "distanceObjectMirrorSlider",
+        "ref": "SliderCompClass",
+        "initdata": {
+          "x": 438,
+          "y": 661,
+          "width": 180,
+          "min": 5,
+          "max": 27,
+          "decimal": 1,
+          "direction": "horizontal"
+        }
+      },
+      {
+        "id": "objectSizeInput0",
+        "ref": "InputBoxClass",
+        "initdata": {
+          "x": 636,
+          "y": 599,
+          "width": 55,
+          "height": 30,
+          "fontSize": 16,
+          "borderWidth": 1,
+          "maxLength": 3,
+          "fillStyle": "rgba(255, 255, 255, 1)"
+        }
+      },
+      {
+        "id": "objectSizeInput1",
+        "ref": "InputBoxClass",
+        "initdata": {
+          "x": 636,
+          "y": 599,
+          "width": 55,
+          "height": 30,
+          "fontSize": 16,
+          "borderWidth": 1,
+          "maxLength": 3,
+          "fillStyle": "rgba(255, 255, 255, 1)"
+        }
+      },
+      {
+        "id": "distanceSizeInput",
+        "ref": "InputBoxClass",
+        "initdata": {
+          "x": 636,
+          "y": 658,
+          "width": 55,
+          "height": 30,
+          "fontSize": 16,
+          "borderWidth": 1,
+          "maxLength": 3,
+          "fillStyle": "rgba(255, 255, 255, 1)"
+        }
+      },
+      {
+        "id": "objectUnit",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 700,
+          "y": 608,
+          "fontColor": "rgba(0, 0, 0, 1)",
+          "text": "unit"
+        }
+      },
+      {
+        "id": "distanceUnit",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 700,
+          "y": 666,
+          "fontColor": "rgba(0, 0, 0, 1)",
+          "text": "unit"
+        }
+      },
+      {
+        "id": "imageSizeText",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 784,
+          "y": 608,
+          "fontColor": "rgba(0, 0, 0, 1)",
+          "text": "imageSize"
+        }
+      },
+      {
+        "id": "imageSizeInput",
+        "ref": "InputBoxClass",
+        "initdata": {
+          "x": 904,
+          "y": 599,
+          "width": 55,
+          "height": 30,
+          "fontSize": 16,
+          "borderWidth": 1,
+          "maxLength": 3,
+          "fillStyle": "rgba(139, 138, 138, 1)",
+          "fontColor": "rgba(255, 255,255, 1)"
+        }
+      },
+      {
+        "id": "imageDistanceText",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 784,
+          "y": 666,
+          "fontColor": "rgba(0, 0, 0, 1)",
+          "text": "imageDistance"
+        }
+      },
+      {
+        "id": "imageDistanceInput",
+        "ref": "InputBoxClass",
+        "initdata": {
+          "x": 904,
+          "y": 658,
+          "width": 55,
+          "height": 30,
+          "fontSize": 16,
+          "borderWidth": 1,
+          "maxLength": 3,
+          "fillStyle": "rgba(139, 138, 138, 1)",
+          "fontColor": "rgba(255, 255,255, 1)"
+        }
+      },
+      {
+        "id": "imageSizeUnit",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 970,
+          "y": 608,
+          "fontColor": "rgba(0, 0, 0, 1)",
+          "text": "unit"
+        }
+      },
+      {
+        "id": "imageDistanceUnit",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 971,
+          "y": 666,
+          "fontColor": "rgba(0, 0, 0, 1)",
+          "text": "unit"
+        }
+      },
+      {
+        "id": "checkBox",
+        "ref": "CheckBoxCompClass",
+        "initdata": {
+          "x": 1056,
+          "y": 601,
+          "width": 25,
+          "height": 25,
+          "txtMaxWidth": 200,
+          "text": "checkbox1"
+        }
+      },
+      {
+        "id": "resetBtn",
+        "ref": "ButtonCompClass",
+        "initdata": {
+          "x": 1056,
+          "y": 643,
+          "width": 45,
+          "height": 45,
+          "imageWidth": 45,
+          "imageHeight": 45,
+          "imgList": [
+            "resetUp.png"
+          ]
+        }
+      },
+      {
+        "id": "numPad",
+        "ref": "NumberPadClass",
+        "initdata": {
+          "x": 520,
+          "y": 251
+        }
+      },
+      {
+        "id": "rayTracingLensesMathObj",
+        "ref": "RayTracingLensesMathClass",
+        "initdata": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "msgBoxObj",
+        "ref": "MsgBoxClass",
+        "initdata": {
+          "x": 0,
+          "y": 0,
+          "width": 645,
+          "height": 345,
+          "headText": "infoBoxHead",
+          "bodyText": "infoBoxBody",
+          "visible": false
+        }
+      }
+    ],
+    "globalSfx": []
+  }
+}
