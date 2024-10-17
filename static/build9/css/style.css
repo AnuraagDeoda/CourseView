@@ -1,0 +1,1013 @@
+@import "fonts.css";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  /* font: inherit; */
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+a,
+a:visited {
+  color: #0000ee;
+}
+.header {
+  width: 100%;
+  height: 40px;
+  background-color: #757575; /*CONTRAST rgba(142, 142, 142, 1);*/
+  color: #ffffff;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: default;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+}
+.header__buttons {
+  background-color: transparent;
+}
+.header__title {
+  position: absolute;
+  left: 0px;
+  font-size: 20px;
+  padding-left: 110px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: #ffffff;
+}
+.logo {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  content: url("../assets/images/logo.svg");
+  background: url("../assets/images/logo.svg") no-repeat;
+  background-size: contain;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+.logoItem {
+  position: absolute;
+  left: 21px;
+  width: 68px;
+  height: 36px;
+  float: left;
+}
+
+.helpScreenButton,
+.copyrightButton,
+.homeButton {
+  width: 44px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7a7a7a; /*CONTRAST #aaaaaa;*/
+  cursor: pointer;
+  /*changed*/
+  color: white;
+  border: none;
+}
+
+.helpScreenButton.hover,
+.copyrightButton.hover,
+.helpScreenButton.selected,
+.copyrightButton.selected {
+  background: #e5e5e5;
+  color: #666;
+}
+
+.menuHolder {
+  position: absolute;
+  top: 100%;
+  color: #666;
+  background: #e5e5e5;
+  right: 0px;
+  width: 192px;
+  padding-top: 1em;
+  display: none;
+}
+
+.menuHolder.show {
+  display: block;
+  /*changed*/
+  text-align: start;
+}
+
+.menuHolder .menuItem {
+  line-height: 48px;
+  /* changed */
+  width: 100%;
+  text-align: start;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+/* changed */
+.closePopup {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+}
+.menuHolder .menuItem::before {
+  content: " ";
+  border: 1px solid #666;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  margin: 0px 10px 0px 18px;
+}
+
+.menuHolder .menuItem:not(:first-child) {
+  border-top: 1px solid #ccc;
+}
+
+.helpScreenButton,
+.homeButton {
+  margin-right: 1px;
+}
+
+.closeButton,
+.closeButtonHelpScreen {
+  width: 50px;
+  height: 45px;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.helpIcon::before,
+.verticalDotsIcon::before,
+.closeIcon::before {
+  font-family: "KlettSymbolDigital-300";
+  font-size: 35px;
+  /* changed */
+  font-size: 33px;
+}
+
+.helpIcon::before {
+  content: "\F074";
+}
+
+.verticalDotsIcon::before {
+  content: "\F071";
+}
+
+.closeIcon::before {
+  content: "\F087";
+}
+
+body {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: none;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: none;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: none;
+  -ms-text-size-adjust: 100%;
+  line-height: 1;
+  font-family: Polo22Klett-Regular;
+  overflow: hidden;
+  touch-action: none;
+  /* background:#000000; */
+}
+
+.preloadDiv {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-image: url("../assets/images/preload.gif");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #000000;
+}
+
+.mStage {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  user-select: none;
+  /* Likely future */
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+}
+
+.mStagebgCanvas {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.mStagemouseCanvas {
+  touch-action: none;
+  /* opacity: 0; */
+}
+
+.mStageDomeLayer {
+  position: absolute;
+  transform-origin: 0px 0px;
+  /* pointer-events: none; */
+}
+
+.preloaderdiv {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: url(../assets/images/preloader/preload.gif) no-repeat center;
+}
+
+.mDomLayer {
+  transform-origin: top left;
+}
+
+.mDomLayer .infoPopup {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: none;
+}
+
+.mDomLayer .infoPopup .popupOverlay {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+
+.mDomLayer .infoPopup.show {
+  z-index: 99999;
+  display: block;
+}
+
+.mDomLayer .infoPopup .popupHolder {
+  position: absolute;
+  background: #e6e6e6;
+  color: white;
+  font-size: 20px;
+  width: 780px;
+  height: 560px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.mDomLayer .infoPopup .popupTitle {
+  background: #858585; /*CONTRAST #b3b3b3;*/
+  padding: 15px 35px;
+  display: flex;
+  justify-content: space-between;
+  cursor: default;
+}
+
+.mDomLayer .infoPopup .popupTitle div:nth-child(2) {
+  cursor: pointer;
+}
+
+.mDomLayer .infoPopup .popupContent {
+  padding: 35px;
+  color: #000;
+  line-height: 24px;
+  height: calc(100% - 124px);
+  overflow: auto;
+  cursor: default;
+}
+/*=============TaskTableCompClass==================== */
+.taskTableWrapper {
+  background: transparent;
+  left: 0px;
+  top: 114px;
+  width: 300px;
+  height: 490px;
+  border: 1px solid;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-size: 16px;
+  line-height: 20px;
+  background: white;
+  /* display: flex; */
+  /* justify-content: flex-start; */
+  /* flex-direction: column; */
+}
+.stepWrapper {
+  min-height: 66px;
+  border-top: 1px solid;
+  padding: 10px 0px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-around;
+
+  width: 90%;
+  margin: auto;
+  /* left: 50%;
+  position: relative;
+  transform: translateX(-50%); */
+}
+/* First Doesn't have a top border */
+#stepWrapper_0 {
+  border: none;
+}
+.stepData {
+  width: 80%;
+}
+.helpBtnWrapper {
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: center;
+  border: 1px solid;
+}
+.helpBtn {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  cursor: pointer;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.helpBtn.disabled {
+  opacity: 1;
+}
+/* div.helpBtnWrapper input:disabled {
+  opacity: 0.5;
+} */
+span.dash {
+  /* display: inline-flex; */
+  border-top: 1px solid;
+  /* margin-top: 5px; */
+  border-top-color: inherit;
+  line-height: 20px;
+}
+span.subscript {
+  font-size: 75%;
+  position: relative;
+  top: 5px;
+}
+span.supscript {
+  font-size: 75%;
+  position: relative;
+  top: -5px;
+}
+span.squareRoot {
+  /* font-size: 75%;
+  position: relative;
+  top: -5px; */
+  display: inline-flex;
+}
+math {
+  display: inline;
+  font-family: "Polo22Klett-Regular";
+}
+msqrt {
+  position: relative;
+  top: -2px;
+}
+mi {
+  position: relative;
+  top: 2px;
+}
+span.hypen {
+  display: inline-flex;
+  width: 100%;
+  border: 1px solid;
+  height: 0px;
+}
+.stepWrapper label {
+  pointer-events: none;
+}
+/*===============Main Wrappper=================*/
+.mainWrapper {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 100%;
+}
+/*===============DropDownClass=================*/
+.menuWrapper {
+  background-color: transparent;
+  border: 1px solid rgb(149 149 149);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+.menuOption {
+  box-sizing: border-box;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 0px 10px;
+  /* border-bottom: 1px solid white; */
+  /* background: transparent !important; */
+}
+.menuOption:disabled {
+  cursor: default;
+  position: none;
+}
+.menuOptionTick {
+  width: 20px;
+  /* mix-blend-mode: exclusion; */
+}
+/*===============DropDownClass=================*/
+.numPad {
+  position: absolute;
+  display: block;
+  border: 1px solid black;
+}
+.numPadHeader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: transparent !important; */
+  border: 1px solid black;
+}
+.keyWrapper {
+  display: block;
+  background-color: gainsboro;
+}
+.numPadData {
+  padding: 5px;
+}
+.numPadButton {
+  padding: 5px 10px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+/*===============DropDownClass=================*/
+.timeLineWrapper {
+  position: absolute;
+  display: flex;
+  /* border: 1px solid; */
+  gap: 6px;
+}
+.timeLineDot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+}
+.timeLineStatusArow {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  /* border-top-color: transparent; */
+  border-style: solid;
+  border-bottom-color: transparent;
+  border-width: 6px;
+  top: -12px;
+}
+.timeLineLeftBtn {
+  transform: rotate(180deg);
+  /* done purposefully as there was some weird color shift in border color( right and bottom) as compared to top and left */
+}
+.timeLineBtn {
+  width: 0px;
+  height: 0px;
+  padding: 0px;
+  background-color: transparent;
+  cursor: pointer;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-width: 6px;
+}
+.timeLineBtn:disabled {
+  cursor: default;
+  background-color: red;
+}
+/*===============DropDownClass=================*/
+.dropDownClass {
+  position: absolute;
+  display: block;
+  border: 1px solid;
+}
+.dropDownClass:enabled {
+  cursor: pointer;
+  pointer-events: all;
+}
+select:disabled {
+  color: rgba(35, 35, 35, 0.7) !important;
+  opacity: 1;
+  background: white;
+  pointer-events: none;
+}
+.dropDownNormal {
+  /* border: 1px solid black; */
+}
+.dropDownCorrect {
+  border: 1px solid rgba(65, 180, 5, 1);
+}
+.dropDownInCorrect {
+  border: 1px solid red;
+}
+/*===============ZoomCompClass=================*/
+.zoomWrapper {
+  border: 1px solid #949494;
+  box-sizing: border-box;
+  display: flex;
+  position: absolute;
+}
+.zoomButtons {
+  background: white;
+  border: 1px solid white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 6px;
+}
+.zoomButtonsHover {
+  border: 1px solid red;
+}
+.zoomButtons:disabled {
+  cursor: default;
+}
+.zoomControlsCompClassImg {
+  width: 100%;
+  pointer-events: none;
+}
+/*===============InputCompClass=================*/
+.inputClass {
+  position: absolute;
+  border: 1px solid #8a8989;
+  display: flex;
+  padding: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  appearance: textfeild;
+  -moz-appearance: textfield;
+}
+.inputClass:disabled,
+.outPreTxt,
+.outPostTxt {
+  cursor: default;
+  pointer-events: none;
+}
+.inputClass:enabled {
+  cursor: pointer;
+  pointer-events: all;
+}
+.outPreTxt {
+  position: absolute;
+  display: block;
+}
+.outPostTxt {
+  position: absolute;
+  display: block;
+}
+/*===============ButtonCompClass=================*/
+.buttonClass {
+  position: absolute;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.buttonClass:disabled {
+  cursor: default;
+}
+.btnWithImage {
+  justify-content: center;
+}
+.buttonText {
+  position: relative;
+  left: 7px;
+}
+#btnImage_ArrowIcon {
+  top: 6px;
+  left: 6px;
+}
+button.buttonClass > img {
+  width: 23px;
+  position: absolute;
+  left: 5px;
+  top: 3px;
+}
+#btnImage_redoBtn,
+#btnImage_undoBtn {
+  width: 33px;
+  margin: auto;
+  position: static;
+}
+#btnImage_editAgainBtn {
+  width: 18px;
+  left: 11px;
+  top: 6px;
+}
+/*===============RadioCompClass=================*/
+.radioWrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  gap: 10px;
+  pointer-events: none;
+}
+.rowWrapper {
+  display: flex;
+  align-items: center;
+}
+.radioClass {
+  margin: 0px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: all;
+  padding: 0px;
+}
+.radioInnerCircle {
+  position: absolute;
+  border-radius: 50%;
+  /* background-color: white; */
+  display: none;
+}
+.radioClass:disabled,
+.radioClass:disabled + label {
+  cursor: default;
+  pointer-events: none;
+}
+.radioClass:enabled + label {
+  cursor: pointer;
+  pointer-events: all;
+}
+/*===============ContainerCompClass=================*/
+.containerWrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+/*===============Message Box Class=================*/
+.msgBoxWrapper {
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+.msgBoxHeader {
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.msgBoxHeaderText {
+  display: flex;
+  align-items: center;
+}
+.msgBoxCloseBtn {
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  background-repeat: no-repeat;
+}
+.msgBoxBody {
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 20px;
+  line-height: 22px;
+}
+/*===============Label New COmp Class=================*/
+.labelClass {
+  position: absolute;
+  pointer-events: none;
+}
+/*=============ToolPanelCompClass==================== */
+.toolPanelWrapper {
+  background: transparent;
+  top: 615px;
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  height: 47px;
+}
+.freeToolPanelWrapper {
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: white;
+  border: 1px solid;
+}
+.sectionWrapper {
+  /* width: 100px; */
+  /* height: 30px; */
+}
+.toolSectionWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+}
+.sectionHeading {
+  margin: 5px 20px;
+}
+.toolPanelButtonWrapper {
+  background: transparent;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+.freeToolPanelButtonWrapper {
+  width: 108px;
+  justify-content: center;
+  display: flex;
+  margin: 10px 0px;
+}
+
+.toolPanelButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: transparent;
+  align-items: center;
+  cursor: pointer;
+  pointer-events: all;
+  /* color: black; */
+  border: none;
+  height: 100%;
+}
+.toolPanelButton:disabled,
+.disabled {
+  cursor: default;
+  opacity: 0.5;
+  /* color: black; */
+  pointer-events: none;
+}
+.toolImage {
+  width: 30px;
+  height: 25px;
+}
+#btn-move > img {
+  transform: scale(0.75);
+}
+#btn-point img {
+  /* width: 10px; */
+  height: 10px;
+  position: relative;
+  top: 7px;
+}
+.freeToolPanelButton {
+}
+.freeToolPanelButton > img {
+  width: 30px;
+  height: 25px;
+  margin-bottom: 5px;
+}
+
+.freeToolPanelButton#btn-point > img {
+  position: static;
+  height: 20px;
+  transform: scale(0.5);
+}
+.toolTip {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: transparent;
+  align-items: center;
+  cursor: pointer;
+  pointer-events: all;
+  /* color: black; */
+  border: none;
+}
+.toolTipWrapper {
+  position: absolute;
+  /* width: 385px; */
+  /* height: 30px; */
+  bottom: 57px;
+  display: none;
+  left: -192.5px;
+  /* transform: translateX(-50%); */
+}
+.freeToolTipWrapper {
+  position: absolute;
+  /* top: 0px; */
+  /* bottom: unset; */
+  display: none;
+  z-index: 4;
+}
+.toolTipContent {
+  padding: 10px;
+  border: 1px solid rgba(170, 170, 166, 1);
+  box-sizing: border-box;
+  background: white;
+}
+.toolTipArrow {
+  border-width: 10px;
+  border-style: solid;
+  /* border-top-color: transparent; */
+  bottom: -20px;
+  border-color: white;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.toolTipArrowInverted {
+  /* border-top-color: transparent; */
+  top: -20px;
+  border-color: white;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  /* border-bottom-color: transparent; */
+  border-left-color: transparent;
+}
+.toolTipArrowBorder {
+  border-width: 12px;
+  border-color: #aeabab;
+  /* border-color: green; */
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  bottom: -24px;
+  z-index: 0;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-style: solid;
+}
+.toolTipArrowBorderInverted {
+  /* border-top-color: transparent; */
+  top: -24px;
+  border-color: #aeabab;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  /* border-bottom-color: transparent; */
+  border-left-color: transparent;
+}
+
+label:focus {
+  outline: none;
+}
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

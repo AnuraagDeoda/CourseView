@@ -1,0 +1,248 @@
+{
+  "labObj": {
+    "title": "title",
+    "lang": "en",
+    "fonts": [
+      "Polo22Klett-Regular"
+    ],
+    "components": [
+      {
+        "id": "panel1",
+        "ref": "PanelCompClass",
+        "initdata": {
+          "x": 0,
+          "y": 0,
+          "width": 349,
+          "height": 721,
+          "headWidth": 349,
+          "border": "1px solid",
+          "padding": "50px",
+          "headTextX": 30,
+          "boxShadow": "5px 10px #888888",
+          "headFontSize": 18,
+          "orientation": "v",
+          "seperators": [
+            238
+          ],
+          "headText": "controllertitle",
+          "copyRight": true
+        }
+      },
+      {
+        "id": "mathObj",
+        "ref": "TypesOfTeethMathClass",
+        "initdata": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "animationTab1",
+        "ref": "CreateJSCompClass",
+        "initdata": {
+          "src": [
+            "assets/js/RadioBtn_1.js"
+          ]
+        }
+      },
+      {
+        "id": "animationTab2",
+        "ref": "CreateJSCompClass",
+        "initdata": {
+          "src": [
+            "assets/js/RadioBtn_2.js"
+          ]
+        }
+      },
+      {
+        "id": "animationTab3",
+        "ref": "CreateJSCompClass",
+        "initdata": {
+          "src": [
+            "assets/js/RadioBtn_4.js"
+          ]
+        }
+      },
+      {
+        "id": "animation",
+        "ref": "CreateJSCompClass",
+        "initdata": {
+          "src": [
+            "assets/js/types_of_teeth.js"
+          ]
+        }
+      },
+      {
+        "id": "radio",
+        "ref": "RadioButtonCompClass",
+        "initdata": {
+          "x": 30,
+          "y": 72,
+          "radius": 12,
+          "margin": 27,
+          "padding": 10,
+          "leftMargin": 65,
+          "topMargin": 32,
+          "orientation": "v",
+          "textMaxWidth": 0,
+          "bgColor": "rgba(255, 255, 255, 1)",
+          "downColor": "rgba(255, 102, 0, 1)",
+          "data": [
+            "assign",
+            "color",
+            "compare"
+          ],
+          "fontSize": 16
+        }
+      },
+      {
+        "id": "pan1Info1",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 30,
+          "y": 270,
+          "fontColor": "rgba(0, 0, 0, 1)",
+          "text": "pan1Info1"
+        }
+      },
+      {
+        "id": "pan1Info2",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 30,
+          "y": 290,
+          "fontColor": "rgba(0, 0, 0, 1)",
+          "text": "pan1Info2"
+        }
+      },
+      {
+        "id": "pan1Info3",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 30,
+          "y": 326,
+          "fontColor": "rgba(0, 0, 0, 1)",
+          "text": "pan1Info3"
+        }
+      },
+      {
+        "id": "pan1Info4",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 30,
+          "y": 347,
+          "fontColor": "rgba(0, 0, 0, 1)",
+          "text": "pan1Info4"
+        }
+      },
+      {
+        "id": "pan1Info5",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 30,
+          "y": 366,
+          "fontColor": "rgba(0, 0, 0, 1)",
+          "text": "pan1Info5"
+        }
+      },
+      {
+        "id": "pan2Info1",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 30,
+          "y": 270,
+          "fontColor": "rgba(0, 0, 0, 1)",
+          "text": "pan2Info1"
+        }
+      },
+      {
+        "id": "pan2Info2",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 30,
+          "y": 290,
+          "fontColor": "rgba(0, 0, 0, 1)",
+          "text": "pan2Info2"
+        }
+      },
+      {
+        "id": "pan3Info1",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 30,
+          "y": 270,
+          "fontColor": "rgba(0, 0, 0, 1)",
+          "text": "pan3Info1"
+        }
+      },
+      {
+        "id": "pan3Info2",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 30,
+          "y": 288,
+          "fontColor": "rgba(0, 0, 0, 1)",
+          "text": "pan3Info2"
+        }
+      },
+      {
+        "id": "pan3Info3",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 30,
+          "y": 307,
+          "fontColor": "rgba(0, 0, 0, 1)",
+          "text": "pan3Info3"
+        }
+      },
+      {
+        "id": "viewObj",
+        "ref": "TypesOfTeethViewClass",
+        "initdata": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "evaluateBtn",
+        "ref": "ButtonCompClass",
+        "initdata": {
+          "x": 30,
+          "y": 636,
+          "width": 86,
+          "height": 44,
+          "text": "evaluate"
+        }
+      },
+      {
+        "id": "resetBtn",
+        "ref": "ButtonCompClass",
+        "initdata": {
+          "x": 136,
+          "y": 636,
+          "width": 45,
+          "height": 45,
+          "imageWidth": 45,
+          "imageHeight": 45,
+          "imgList": [
+            "resetUp.png"
+          ]
+        }
+      },
+      {
+        "id": "msgBoxObj",
+        "ref": "MsgBoxClass",
+        "initdata": {
+          "x": 0,
+          "y": 0,
+          "width": 645,
+          "height": 345,
+          "headText": "infoBoxHead",
+          "bodyText": "infoBoxBody",
+          "visible": false
+        }
+      }
+    ],
+    "globalSfx": []
+  }
+}

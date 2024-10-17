@@ -1,0 +1,1184 @@
+{
+  "labObj": {
+    "title": "title",
+    "lang": "en",
+    "fonts": ["Polo22Klett-Regular"],
+    "components": [
+       {
+        "id": "graphComp",
+        "ref": "graphPluginAdvClass",
+        "initdata": {
+          "x": 351,
+          "y": 60,
+          "width": 978,
+          "height": 590,
+          "visible": true,
+          "showQuadrants": "1234",
+          "showPointText": true,
+          "alignXLine": "left",
+          "alignYLine": "bottom",
+          "panX": true,
+          "panY": true,
+          "xAxis": {
+            "visible": true
+          }
+        }
+      },
+      
+      {
+        "id": "geoDrawHelpObj",
+        "ref": "FreeGeoDrawClass",
+        "initdata":{
+          "shapesEditable":true, 
+          "pointSnapping":true,
+          "undoRedo": true,
+          "plotPointOnExistingPoint": true,
+          "shapes":{
+            "segment":{
+              "label":{
+                "visible":true
+              },
+              "segDistanceLabel":true
+            },
+            "line":{
+              "label":{
+                "visible":true
+              }
+            },
+            "circle":{
+              "digit":1
+            }
+          }
+        }
+      },
+      {
+        "id": "geoDrawObjAns",
+        "ref": "GeoDrawClass",
+        "initdata":{
+          "undoRedo": true,
+          "shapesEditable":false,
+          "shapes":{
+            "brush1": {
+              "color":{
+                "stroke": "rgba(0,0,0,1)"
+              }
+            },
+            "segment":{
+              "color":{
+                "stroke":"rgb(255,255,255)"
+              },
+              "label":{
+                "visible":true
+              }
+            },
+            "line":{
+              "label":{
+                "visible":false
+              }
+            },
+            "snapToGrid":false
+          }
+        }
+      },
+      {
+        "id": "planComp",
+        "ref": "graphPluginAdvClass",
+        "initdata": {
+          "x": 301,
+          "y": 154,
+          "width": 300,
+          "height": 200,
+          "visible": false,
+          "showQuadrants": "1234",
+          "showPointText": true,
+          "alignXLine": "left",
+          "alignYLine": "bottom",
+          "panX": true,
+          "panY": true,
+          "sections": {
+            "axis": {
+              "origin": {
+                "visible": false
+              }
+            }
+          }
+        }
+      },
+      
+      {
+        "id": "planDrawObj",
+        "ref": "PlanDrawClass",
+        "initdata":{
+          "visible":false,
+          "shapesEditable":true, 
+          "ignorePointToColor" : true,
+          "shapes":{
+            "segment":{
+              "label":{
+                "visible":true
+              }
+            },
+            "angle":{
+              "dotOn90":false
+            }
+          },
+          "snapToGrid":false
+        }
+      },
+      {
+        "id": "planDrawObjAns",
+        "ref": "GeoDrawClass",
+        "initdata":{
+          "visible":false,
+          "shapesEditable":true, 
+          "shapes":{
+            "segment":{
+              "label":{
+                "visible":true
+              }
+            }
+          }
+        }
+      },
+      {
+
+        "id": "panel",
+        "ref": "PanelCompClass",
+        "initdata": {
+          "headText": "controllertitle",
+          "visible":false
+        }
+      },
+      {
+        "id": "geoTools",
+        "ref": "FreeToolPanelEnglishCompClass",
+        "initdata": {
+          "x":65,
+          "y":65,
+          "height": 590,
+          "width":350 ,
+          "visible": true,
+          "buttons": {
+            "move": {
+              "text": "move",
+              "info": "moveInfo",
+              "visible": true
+            },
+            "point": {
+              "text": "point",
+              "info": "pointInfo",
+              "visible": true
+            },
+            "delete": {
+              "text": "point",
+              "info": "pointInfo",
+              "visible": true
+            },
+            "segment": {
+              "text": "segment",
+              "info": "segmentInfo",
+              "visible": true
+            },
+            "segmentDash": {
+              "text": "segmentDash",
+              "info": "segmentDashInfo",
+              "visible": true
+            },
+            "ray": {
+              "text": "ray",
+              "info": "rayInfo",
+              "visible": true
+            },
+            "line": {
+              "text": "line",
+              "info": "lineInfo",
+              "visible": true
+            },
+            "angleRay": {
+              "text": "angleRay",
+              "info": "angleRayInfo",
+              "visible": true
+            },
+            "angle": {
+              "text": "angle",
+              "info": "angleInfo",
+              "visible": true
+            },
+            "triangle": {
+              "text": "triangle",
+              "info": "triangleInfo",
+              "visible": true
+            },
+            "parallelLine": {
+              "text": "parallelLine",
+              "info": "parallelLineInfo",
+              "visible": true
+            },
+            "perpendicularLine": {
+              "text": "perpendicularLine",
+              "info": "perpendicularLineInfo",
+              "visible": true
+            },
+            "circle":{
+              "text": "circle",
+              "info": "circleInfo",
+              "visible": true
+            },
+            "compass":{
+              "text": "compass",
+              "info": "compassInfo",
+              "visible": true
+            },   
+            "circle_3":{
+              "text": "circle_3",
+              "info": "circle_3Info",
+              "visible": true
+            },
+            "length": {
+              "text": "length",
+              "info": "lengthInfo",
+              "visible": true
+            },
+            "angleB": {
+              "text": "angleB",
+              "info": "angleBInfo",
+              "visible": true
+            },
+            "midPoint":{
+              "text": "midpoint",
+              "info": "midpointInfo",
+              "visible": true
+            },
+            "perpendicularBisector":{
+              "text": "perpendicularBisector",
+              "info": "perpendicularBisectorInfo",
+              "visible": true
+            },
+            "angleSize": {
+              "text": "angleSize",
+              "info": "angleSizeInfo",
+              "visible": true
+            },
+            "segSize": {
+              "text": "segSize",
+              "info": "segSizeInfo",
+              "visible": true
+            },
+            "circleSize": {
+              "text": "circleSize",
+              "info": "circleSizeInfo",
+              "visible": true
+            },
+            "brush1": {
+              "text": "brush1",
+              "info": "brushInfo",
+              "visible": true
+            },
+            "mirrorOnPoint" : {
+              "text": "mirrorOnPoint",
+              "info": "mirrorOnPointInfo",
+              "visible": true
+            },
+            
+            "mirrorOnLine": {
+              "text": "mirrorOnLine",
+              "info": "mirrorOnLineInfo",
+              "visible": true
+            },
+            "square": {
+              "text": "square",
+              "info": "squareInfo",
+              "visible": true
+            },
+            "select": {
+              "text": "select",
+              "info": "selectInfo",
+              "visible": true
+            }
+          },
+          "newbuttons": {
+            "General": {
+              "move": {
+                "text": "move",
+                "info": "moveInfo",
+                "visible": true
+              },
+              "select": {
+                "text": "select",
+                "info": "selectInfo",
+                "visible": true
+              },
+              "point": {
+                "text": "point",
+                "info": "pointInfo",
+                "visible": true
+              },
+              "length": {
+                "text": "length",
+                "info": "lengthInfo",
+                "visible": true
+              },
+              "labelTool": {
+                "text": "labelTool",
+                "info": "labelToolInfo",
+                "visible": true
+              },
+              "delete": {
+                "text": "deleteTool",
+                "info": "deleteToolInfo",
+                "visible": true
+              }
+            },
+            "Lines": {
+              "segment": {
+                "text": "segment",
+                "info": "segmentInfo",
+                "visible": true
+              },
+              "segmentDash": {
+                "text": "segmentDash",
+                "info": "segmentDashInfo",
+                "visible": true
+              },
+              "segSize": {
+                "text": "segSize",
+                "info": "segSizeInfo",
+                "visible": true
+              },
+              "ray": {
+                "text": "ray",
+                "info": "rayInfo",
+                "visible": true
+              },
+              "line": {
+                "text": "line",
+                "info": "lineInfo",
+                "visible": true
+              }
+            },
+            "Circles": {
+              "circle":{
+                "text": "circle",
+                "info": "circleInfo",
+                "visible": true
+              },
+              "circleSize": {
+                "text": "circleSize",
+                "info": "circleSizeInfo",
+                "visible": true
+              }, 
+              "circle_3":{
+                "text": "circle_3",
+                "info": "circle_3Info",
+                "visible": true
+              },
+              "compass":{
+                "text": "compass",
+                "info": "compassInfo",
+                "visible": true
+              }
+            },
+            "Angles": {
+              "angleRay": {
+                "text": "angleRay",
+                "info": "angleRayInfo",
+                "visible": true
+              },
+              "angleSize": {
+                "text": "angleSize",
+                "info": "angleSizeInfo",
+                "visible": true
+              },
+              "angle": {
+                "text": "angle",
+                "info": "angleInfo",
+                "visible": true
+              }
+            },
+            "Constructions": {
+              "perpendicularLine": {
+                "text": "perpendicularLine",
+                "info": "perpendicularLineInfo",
+                "visible": true
+              },
+              "parallelLine": {
+                "text": "parallelLine",
+                "info": "parallelLineInfo",
+                "visible": true
+              },
+              "mirrorOnPoint" : {
+                "text": "mirrorOnPoint",
+                "info": "mirrorOnPointInfo",
+                "visible": true
+              },
+              "mirrorOnLine": {
+                "text": "mirrorOnLine",
+                "info": "mirrorOnLineInfo",
+                "visible": true
+              },
+              "midPoint":{
+                "text": "midpoint",
+                "info": "midpointInfo",
+                "visible": true
+              },
+              "perpendicularBisector":{
+                "text": "perpendicularBisector",
+                "info": "perpendicularBisectorInfo",
+                "visible": true
+              },
+              "angleB": {
+                "text": "angleB",
+                "info": "angleBInfo",
+                "visible": true
+              }
+            },
+            "Figures": {
+              "triangle": {
+                "text": "triangle",
+                "info": "triangleInfo",
+                "visible": true
+              },
+              "square": {
+                "text": "square",
+                "info": "squareInfo",
+                "visible": true
+              }
+            },
+            "Dye": {
+              "brush1": {
+                "text": "brush1",
+                "info": "brushInfo",
+                "visible": true
+              },
+              "brush2": {
+                "text": "brush2",
+                "info": "brushInfo",
+                "visible": true
+              },
+              "brush3": {
+                "text": "brush3",
+                "info": "brushInfo",
+                "visible": true
+              },
+              "brush4": {
+                "text": "brush4",
+                "info": "brushInfo",
+                "visible": true
+              },
+              "brush5": {
+                "text": "brush5",
+                "info": "brushInfo",
+                "visible": true
+              },
+              "brush6": {
+                "text": "brush6",
+                "info": "brushInfo",
+                "visible": true
+              },
+              "brush7": {
+                "text": "brush7",
+                "info": "brushInfo",
+                "visible": true
+              }
+            }          
+          }
+        }
+      },
+      {
+        "id": "dummyComp",
+        "ref": "graphPluginAdvClass",
+        "initdata": {
+          "x": 0,
+          "y": 652,
+          "width": 350,
+          "height": 100,
+          "visible": true,
+          "arrowOnly":true,
+          "borderColor": "rgba(255,255,255,1)",
+          "panX": false,
+          "panY": false,
+          "sections": {
+            "axis": {
+              "origin": {
+                "visible": false
+              },
+              "xAxis": {
+                "visible":false
+              },
+              "yAxis": {
+                "visble": false
+              },
+              "visible": false
+            },
+            "graph": {
+              "visible": false,
+              "horizontalGrid": false,
+              "verticalGrid": false
+            }
+          }
+        }
+      },
+      {
+        "id": "dummyComp2",
+        "ref": "graphPluginAdvClass",
+        "initdata": {
+          "x": 0,
+          "y": 0,
+          "width": 350,
+          "height": 58,
+          "visible": true,
+          "arrowOnly":true,
+          "borderColor": "rgba(255,255,255,1)",
+          "panX": false,
+          "panY": false,
+          "sections": {
+            "axis": {
+              "origin": {
+                "visible": false
+              },
+              "xAxis": {
+                "visible":false
+              },
+              "yAxis": {
+                "visble": false
+              },
+              "visible": false
+            },
+            "graph": {
+              "visible": false,
+              "horizontalGrid": false,
+              "verticalGrid": false
+            }
+          }
+        }
+      },
+      {
+        "id": "logicObj",
+        "ref": "All_LogicClass"
+      },
+      {
+        "id": "draggable",
+        "ref": "ContainerCompClass",
+        "initdata": {
+          "x": 596,
+          "y": 175 ,
+          "width": 350,
+          "height": 175,
+          "dragMinX": 301,
+          "dragMinY": 114,
+          "dragMaxX": 1278,
+          "dragMaxY": 601,
+          "visible": false
+        }
+      },
+      {
+        "id": "segmentLabel",
+        "ref": "LabelNewCompClass",
+        "initdata": {
+          "x": 351,
+          "y": 105,
+          "fontSize": 16,
+          "visible":false,
+          "text": "segmentQuestion"
+        }
+      },
+      {
+        "id": "segInput",
+        "ref": "InputBoxClass",
+        "initdata": {
+          "x": 745,
+          "y": 480,
+          "width": 40,
+          "height": 30,
+          "strokeStyle": "rgba(0,0,0,0.5)",
+          "shadowVisible": false,
+          "filterType": 10,
+          "maxLength": 3,
+          "borderWidth": 1,
+          "showComponent": false,
+          "textAlign":"center",
+          "textPadding":2,
+          "enterToSubmit": true,
+          "useCommaAsDecimal": true
+        }
+      },
+      {
+        "id": "angleDraggable",
+        "ref": "ContainerCompClass",
+        "initdata": {
+          "x": 596,
+          "y": 175,
+          "width": 375,
+          "height": 250,
+          "dragMinX": 301,
+          "dragMinY": 114,
+          "dragMaxX": 1278,
+          "dragMaxY": 601,
+          "visible": false
+        }
+      },
+      {
+        "id": "angleLabel",
+        "ref": "LabelNewCompClass",
+        "initdata": {
+          "x": 351,
+          "y": 105,
+          "fontSize": 16,
+          "visible": false,
+          "text": "angleQuestion"
+        }
+      },
+      {
+        "id": "angleDegree",
+        "ref": "LabelNewCompClass",
+        "initdata": {
+          "x": 351,
+          "y": 105,
+          "fontSize": 20,
+          "visible": false,
+          "text": "angleDegree"
+        }
+      },
+      {
+        "id": "radio",
+        "ref": "RadioButtonCompClass",
+        "initdata": {
+          "x": 441,
+          "y": 492,
+          "width": 290,
+          "height": 148,
+          "show": false,
+          "data": [
+            "radio1",
+            "radio2"
+          ]
+        }
+      },
+      {
+        "id": "angleInput",
+        "ref": "InputBoxClass",
+        "initdata": {
+          "x": 950,
+          "y": 480,
+          "width": 40,
+          "height": 30,
+          "strokeStyle": "rgba(0,0,0,0.5)",
+          "shadowVisible": false,
+          "filterType": 10,
+          "maxLength": 3,
+          "borderWidth": 1,
+          "showComponent": false,
+          "textAlign": "center",
+          "textPadding": 2,
+          "useCommaAsDecimal": true,
+          "enterToSubmit":true
+        }
+      },
+      {
+        "id": "circleDraggable",
+        "ref": "ContainerCompClass",
+        "initdata": {
+          "x": 596,
+          "y": 175 ,
+          "width": 350,
+          "height": 175,
+          "dragMinX": 301,
+          "dragMinY": 114,
+          "dragMaxX": 1278,
+          "dragMaxY": 601,
+          "visible": false
+        }
+      },
+      {
+        "id": "labelDraggable",
+        "ref": "ContainerCompClass",
+        "initdata": {
+          "x": 596,
+          "y": 175 ,
+          "width": 350,
+          "height": 250,
+          "dragMinX": 301,
+          "dragMinY": 114,
+          "dragMaxX": 1278,
+          "dragMaxY": 601,
+          "visible": false
+        }
+      },
+      {
+        "id": "labelQuestion",
+        "ref": "LabelNewCompClass",
+        "initdata": {
+          "x": 351,
+          "y": 105,
+          "fontSize": 18,
+          "visible":false,
+          "isBold":true,
+          "text": "labelQuestion"
+        }
+      },
+      {
+        "id": "labelInput",
+        "ref": "InputBoxClass",
+        "initdata": {
+          "x": 703,
+          "y": 480,
+          "width": 150,
+          "height": 30,
+          "strokeStyle": "rgba(0,0,0,0.5)",
+          "shadowVisible": false,
+          "filterType": 13,
+          "fontSize":18,
+          "maxLength": 10,
+          "borderWidth": 1,
+          "showComponent": false,
+          "textAlign":"center",
+          "fontFamily": "polo22Klett-Regular",
+          "textPadding":2,
+          "isNumeric":false,
+          "enterToSubmit": true,
+          "germanUmlaute":true
+        }
+      },
+      {
+        "id":"labelSubmitBtn",
+        "ref":"ButtonCompClass",
+        "initdata": {
+          "x": 950,
+          "y": 480,
+          "width": 100,
+          "height": 30,
+          "visible":false,
+          "text":"labelSubmitBtn"
+          
+        }
+      },
+      {
+        "id":"alpha_Btn",
+        "ref":"ButtonCompClass",
+        "initdata": {
+          "x": 950,
+          "y": 480,
+          "width": 30,
+          "height": 30,
+          "visible":false,
+          "text":"alpha"
+        }
+      },
+      
+      {
+        "id":"beta_Btn",
+        "ref":"ButtonCompClass",
+        "initdata": {
+          "x": 950,
+          "y": 480,
+          "width": 30,
+          "height": 30,
+          "visible":false,
+          "text":"beta"
+        }
+      },
+      {
+        "id":"gama_Btn",
+        "ref":"ButtonCompClass",
+        "initdata": {
+          "x": 950,
+          "y": 480,
+          "width": 30,
+          "height": 30,
+          "visible":false,
+          "text":"gama"
+        }
+      },
+      {
+        "id":"delta_Btn",
+        "ref":"ButtonCompClass",
+        "initdata": {
+          "x": 950,
+          "y": 480,
+          "width": 30,
+          "height": 30,
+          "visible":false,
+          "text":"delta"
+        }
+      },
+      {
+        "id":"epsilon_Btn",
+        "ref":"ButtonCompClass",
+        "initdata": {
+          "x": 950,
+          "y": 480,
+          "width": 30,
+          "height": 30,
+          "visible":false,
+          "text":"epsilon"
+        }
+      },
+      {
+        "id":"lambda_Btn",
+        "ref":"ButtonCompClass",
+        "initdata": {
+          "x": 950,
+          "y": 480,
+          "width": 30,
+          "height": 30,
+          "visible":false,
+          "text":"lambda"
+        }
+      },
+      {
+        "id":"rho_Btn",
+        "ref":"ButtonCompClass",
+        "initdata": {
+          "x": 950,
+          "y": 480,
+          "width": 30,
+          "height": 30,
+          "visible":false,
+          "text":"rho"
+        }
+      },
+      {
+        "id":"psi_Btn",
+        "ref":"ButtonCompClass",
+        "initdata": {
+          "x": 950,
+          "y": 480,
+          "width": 30,
+          "height": 30,
+          "visible":false,
+          "text":"psi"
+        }
+      },
+      {
+        "id":"fi_Btn",
+        "ref":"ButtonCompClass",
+        "initdata": {
+          "x": 950,
+          "y": 480,
+          "width": 30,
+          "height": 30,
+          "visible":false,
+          "text":"fi"
+        }
+      },
+      {
+        "id":"omega_Btn",
+        "ref":"ButtonCompClass",
+        "initdata": {
+          "x": 950,
+          "y": 480,
+          "width": 30,
+          "height": 30,
+          "visible":false,
+          "text":"omega"
+        }
+      },
+      {
+        "id":"angleArc_Btn",
+        "ref":"ButtonCompClass",
+        "initdata": {
+          "x": 950,
+          "y": 480,
+          "width": 30,
+          "height": 30,
+          "visible":false,
+          "text":"angleLogo"
+        }
+      },
+      {
+        "id": "radiusLabel",
+        "ref": "LabelNewCompClass",
+        "initdata": {
+          "x": 351,
+          "y": 105,
+          "fontSize": 16,
+          "visible":false,
+          "text": "radiusQuestion"
+        }
+      },
+      {
+        "id": "radInput",
+        "ref": "InputBoxClass",
+        "initdata": {
+          "x": 745,
+          "y": 480,
+          "width": 40,
+          "height": 30,
+          "strokeStyle": "rgba(0,0,0,0.5)",
+          "shadowVisible": false,
+          "filterType": 10,
+          "maxLength": 3,
+          "borderWidth": 1,
+          "showComponent": false,
+          "textAlign":"center",
+          "textPadding":2,
+          "enterToSubmit": true,
+          "useCommaAsDecimal": true
+        }
+      },
+      {
+        "id":"circleSubmitBtn",
+        "ref":"ButtonCompClass",
+        "initdata": {
+          "x": 950,
+          "y": 480,
+          "width": 100,
+          "height": 30,
+          "visible":false,
+          "text":"submitBtn"
+          
+        }
+      },
+      {
+        "id":"angleSubmitBtn",
+        "ref":"ButtonCompClass",
+        "initdata": {
+          "x": 950,
+          "y": 480,
+          "width": 100,
+          "height": 30,
+          "visible":false,
+          "text":"submitBtn"
+          
+        }
+      },
+      {
+        "id":"segSubmitBtn",
+        "ref":"ButtonCompClass",
+        "initdata": {
+          "x": 950,
+          "y": 480,
+          "width": 100,
+          "height": 30,
+          "visible":false,
+          "text":"submitBtn"
+          
+        }
+      },   
+      {
+        "id": "zoomControls",
+        "ref": "ZoomControlsCompClass",
+        "initdata": {
+          "x": 1067,
+          "y": 619
+        }
+      },
+      {
+        "id": "zoomPlanControls",
+        "ref": "ZoomControlsCompClass",
+        "initdata": {
+          "x": 1067,
+          "y": 673,
+          "visible": false
+        }
+      },
+      
+      {
+        "id": "timeLine",
+        "ref": "TimeLineCompClass",
+        "initdata": {
+          "x": 1185,
+          "y": 629,
+          "visible":false,
+          "totalTasks": 1
+        }
+      },
+      {
+        "id": "undoBtn",
+        "ref": "ButtonCompClass",
+        "initdata": {
+          "x": 20,
+          "y": 675,
+          "width": 72,
+          "imageWidth": 33,
+          "imageHeight": 17,
+          "visible":false,
+          "imageAlign": "center",
+          "imgList": [
+            "left_arrow.png"
+          ]
+        }
+      },
+      {
+        "id": "redoBtn",
+        "ref": "ButtonCompClass",
+        "initdata": {
+          "x": 102,
+          "y": 675,
+          "width": 72,
+          "imageWidth": 33,
+          "imageHeight": 17,
+          "visible":false,
+          "imageAlign": "center",
+          "imgList": [
+            "right_arrow.png"
+          ]
+        }
+      },      
+      {
+        "id": "rightClickOptions",
+        "ref": "MenuCompClass",
+        "initdata": {
+          "text": {
+            "showAxis": "showAxis",
+            "showGrid": "showGrid",
+            "selectAll": "selectAll",
+            "snapToGrid": "snapToGrid",
+            "deselectSelected": "deselectSelected",
+            "deleteSelected": "deleteSelected"
+          },
+          "width":270,
+          "data":{
+            "showAxis": {
+              "visible": true,
+              "toggle": true,
+              "selected": true
+            },
+            "showGrid": {
+              "visible": true,
+              "toggle": true,
+              "selected": true
+            },
+            "snapToGrid": {
+              "visible": true,
+              "toggle": true,
+              "selected": true
+            },
+            "selectAll": {
+              "visible": true,
+              "toggle": true,
+              "selected": true
+            }
+            ,
+            "deselectSelected": {
+              "visible": false,
+              "toggle": true,
+              "selected": false
+            },
+            "deleteSelected": {
+              "visible": false,
+              "toggle": true,
+              "selected": false
+            }
+          }
+          
+        }
+      },
+      {
+        "id": "submitBox",
+        "ref": "MsgBoxClass",
+        "initdata": {
+          "x": 1280,
+          "y": 604,
+          "maxWidth": 308,
+          "type": "correct",
+          "position": "bottom-right",
+          "headText": "alertHead",
+          "bodyText": "submitAlert",
+          "visible": false
+        }
+      },
+      {
+        "id": "wrongAlertBox",
+        "ref": "MsgBoxClass",
+        "initdata": {
+          "x": 1280,
+          "y": 604,
+          "maxWidth": 290,
+          "type": "incorrect",
+          "position": "bottom-right",
+          "headText": "alertHead",
+          "bodyText": "alertBody",
+          "visible": false
+        }
+      },
+      {
+        "id": "completeAlertBox",
+        "ref": "MsgBoxClass",
+        "initdata": {
+          "x": 1280,
+          "y": 604,
+          "maxWidth": 308,
+          "type": "correct",
+          "position": "bottom-right",
+          "headText": "alertHead",
+          "bodyText": "completeAlert",
+          "visible": false
+        }
+      },
+      {
+        "id": "stepsEndAlertBox",
+        "ref": "MsgBoxClass",
+        "initdata": {
+          "x": 1280,
+          "y": 604,
+          "maxWidth": 308,
+          "type": "correct",
+          "position": "bottom-right",
+          "headText": "alertHead",
+          "bodyText": "helpCompleteAlert",
+          "visible": false
+        }
+      },
+      {
+        "id": "undoBtn",
+        "ref": "ButtonCompClass",
+        "initdata": {
+          "x": 300,
+          "y": 675,
+          "width": 72,
+          "imageWidth": 33,
+          "imageHeight": 17,
+          "imageAlign": "center",
+          "imgList": [
+            "left_arrow.png"
+          ]
+        }
+      },
+      {
+        "id": "redoBtn",
+        "ref": "ButtonCompClass",
+        "initdata": {
+          "x": 400,
+          "y": 675,
+          "width": 72,
+          "imageWidth": 33,
+          "imageHeight": 17,
+          "imageAlign": "center",
+          "imgList": [
+            "right_arrow.png"
+          ]
+        }
+      },
+      {
+        "id": "editAgainBtn",
+        "ref": "ButtonCompClass",
+        "initdata": {
+          "x": 1110,
+          "y": 675,
+          "width": 160,
+          "text": "editAgain",
+          "imageWidth": 16,
+          "imageHeight": 16,
+          "imgList": [
+            "editAgain.png"
+          ]
+        }
+      },
+      {
+        "id": "numPad",
+        "ref": "NumberPadClass",
+        "initdata": {
+          "x": 275,
+          "y": 400
+        }
+      },
+      
+      {
+        "id": "mathObj",
+        "ref": "All_MathClass"
+      }
+    ],
+    "globalSfx": []
+  }
+}

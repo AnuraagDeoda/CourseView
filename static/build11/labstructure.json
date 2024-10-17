@@ -1,0 +1,395 @@
+{
+  "labObj": {
+    "title": "title",
+    "lang": "en",
+    "fonts": [
+      "Polo22Klett-Regular"
+    ],
+    "components": [
+      {
+        "id": "panel1",
+        "ref": "PanelCompClass",
+        "initdata": {
+          "x": 0,
+          "y": 0,
+          "width": 314,
+          "height": 720,
+          "headWidth": 314,
+          "headTextX": 21,
+          "border": "1px solid",
+          "padding": "50px",
+          "boxShadow": "5px 10px #888888",
+          "headFontSize": 18,
+          "orientation": "v",
+          "headText": "controllertitle",
+          "copyRight": true
+        }
+      },
+      {
+        "id": "viewObj",
+        "ref": "MassSpectrometryViewClass",
+        "initdata": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "animation",
+        "ref": "CreateJSCompClass",
+        "initdata": {
+          "src": [
+            "assets/js/massSpecCrops.js"
+          ]
+        }
+      },
+      {
+        "id": "animation2",
+        "ref": "CreateJSCompClass",
+        "initdata": {
+          "src": [
+            "assets/js/IonizerFagmentation.js"
+          ]
+        }
+      },
+      {
+        "id": "videoOverview",
+        "ref": "VideoPlayerCompClass",
+        "initdata": {
+          "x": 314,
+          "y": 0,
+          "width": 966,
+          "height": 582,
+          "poster": "01_overview.png",
+          "videoPath": "assets/videos/01_overview.mp4"
+        }
+      },
+      {
+        "id": "videoProbeInput",
+        "ref": "VideoPlayerCompClass",
+        "initdata": {
+          "x": 314,
+          "y": 0,
+          "width": 966,
+          "height": 582,
+          "poster": "02_probeInput.png",
+          "videoPath": "assets/videos/02_probeInput.mp4"
+        }
+      },
+      {
+        "id": "videoIonizer",
+        "ref": "VideoPlayerCompClass",
+        "initdata": {
+          "x": 314,
+          "y": 0,
+          "width": 966,
+          "height": 582,
+          "poster": "03_ionizer.png",
+          "videoPath": "assets/videos/03_ionizer.mp4"
+        }
+      },
+      {
+        "id": "videoIonPathOverview",
+        "ref": "VideoPlayerCompClass",
+        "initdata": {
+          "x": 314,
+          "y": 0,
+          "width": 966,
+          "height": 582,
+          "poster": "05_ionPathOverview.png",
+          "videoPath": "assets/videos/05_ionPathOverview.mp4"
+        }
+      },
+      {
+        "id": "videoBundingTheIonbeam",
+        "ref": "VideoPlayerCompClass",
+        "initdata": {
+          "x": 314,
+          "y": 0,
+          "width": 966,
+          "height": 582,
+          "poster": "06_bundingTheIonbeam.png",
+          "videoPath": "assets/videos/06_bundingTheIonbeam.mp4"
+        }
+      },
+      {
+        "id": "videoDeflectorChannel",
+        "ref": "VideoPlayerCompClass",
+        "initdata": {
+          "x": 314,
+          "y": 0,
+          "width": 966,
+          "height": 582,
+          "poster": "07_DeflectorChannel.png",
+          "videoPath": "assets/videos/07_DeflectorChannel.mp4"
+        }
+      },
+      {
+        "id": "videoMassSpectrometry",
+        "ref": "VideoPlayerCompClass",
+        "initdata": {
+          "x": 314,
+          "y": 0,
+          "width": 966,
+          "height": 582,
+          "poster": "08_massSpectrometry.png",
+          "videoPath": "assets/videos/08_electromagnet.mp4"
+        }
+      },
+      {
+        "id": "videoDetector",
+        "ref": "VideoPlayerCompClass",
+        "initdata": {
+          "x": 314,
+          "y": 0,
+          "width": 966,
+          "height": 582,
+          "poster": "09_Detector.png",
+          "videoPath": "assets/videos/09_Detector.mp4"
+        }
+      },
+      {
+        "id": "mathObj",
+        "ref": "MassSpectrometryMathClass",
+        "initdata": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "radioButtons",
+        "ref": "RadioButtonCompClass",
+        "initdata": {
+          "x": 21,
+          "y": 62,
+          "radius": 12,
+          "margin": 15,
+          "padding": 10,
+          "leftMargin": 80,
+          "textMaxWidth": 0,
+          "orientation": "v",
+          "bgColor": "rgba(255, 255, 255, 1)",
+          "downColor": "rgba(255, 102, 0, 1)",
+          "data": [
+            "radioBtnOption1",
+            "radioBtnOption2",
+            "radioBtnOption3"
+          ],
+          "fontSize": 16
+        }
+      },
+      {
+        "id": "3dStructureCheckBox",
+        "ref": "CheckBoxCompClass",
+        "initdata": {
+          "x": 25,
+          "y": 126,
+          "fontSize": 15,
+          "txtMaxWidth": 0,
+          "visible": false,
+          "height": 25,
+          "width": 25,
+          "padding": 2,
+          "topMargin": 13,
+          "text": "3dStructure"
+        }
+      },
+      {
+        "id": "sliderLabel_1",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 60,
+          "y": 218,
+          "text": "probeInput",
+          "fontSize": 16,
+          "isBold": true,
+          "fontColor": "rgba(51, 51, 51, 1)"
+        }
+      },
+      {
+        "id": "sliderLabel_2",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 60,
+          "y": 254,
+          "text": "ionizer",
+          "fontSize": 16,
+          "isBold": false,
+          "fontColor": "rgba(51, 51, 51, 1)"
+        }
+      },
+      {
+        "id": "sliderLabel_3",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 60,
+          "y": 290,
+          "text": "fragmentation",
+          "fontSize": 16,
+          "isBold": false,
+          "fontColor": "rgba(51, 51, 51, 1)"
+        }
+      },
+      {
+        "id": "sliderLabel_4",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 60,
+          "y": 327,
+          "text": "ionPathOverview",
+          "fontSize": 16,
+          "isBold": false,
+          "fontColor": "rgba(51, 51, 51, 1)"
+        }
+      },
+      {
+        "id": "sliderLabel_5",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 60,
+          "y": 363,
+          "text": "bundlingTheIonBeam",
+          "fontSize": 16,
+          "isBold": false,
+          "fontColor": "rgba(51, 51, 51, 1)"
+        }
+      },
+      {
+        "id": "sliderLabel_6",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 60,
+          "y": 400,
+          "text": "deflectorChannel",
+          "fontSize": 16,
+          "isBold": false,
+          "fontColor": "rgba(51, 51, 51, 1)"
+        }
+      },
+      {
+        "id": "sliderLabel_7",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 60,
+          "y": 435,
+          "text": "electromagnet",
+          "fontSize": 16,
+          "isBold": false,
+          "fontColor": "rgba(51, 51, 51, 1)"
+        }
+      },
+      {
+        "id": "sliderLabel_8",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 60,
+          "y": 472,
+          "text": "detector",
+          "fontSize": 16,
+          "isBold": false,
+          "fontColor": "rgba(51, 51, 51, 1)"
+        }
+      },
+      {
+        "id": "videoSlider",
+        "ref": "SliderCompClass",
+        "initdata": {
+          "x": 25,
+          "y": 495,
+          "width": 236,
+          "min": 0,
+          "max": 100
+        }
+      },
+      {
+        "id": "checkStructureBtn",
+        "ref": "ButtonCompClass",
+        "isBold": true,
+        "initdata": {
+          "x": 25,
+          "y": 646,
+          "visible": false,
+          "width": 137,
+          "height": 44,
+          "text": "checkStructure"
+        }
+      },
+      {
+        "id": "playPauseBtn",
+        "ref": "PlayPauseBtnCompClass",
+        "initdata": {
+          "x": 21,
+          "y": 656,
+          "width": 45,
+          "height": 45,
+          "imageWidth": 45,
+          "imageHeight": 45,
+          "images": [
+            "playUp.png",
+            "playDown.png",
+            "pauseUp.png",
+            "pauseDown.png"
+          ]
+        }
+      },
+      {
+        "id": "resetBtn",
+        "ref": "ButtonCompClass",
+        "initdata": {
+          "x": 85,
+          "y": 656,
+          "width": 45,
+          "height": 45,
+          "imageWidth": 45,
+          "imageHeight": 45,
+          "imgList": [
+            "resetUp.png"
+          ]
+        }
+      },
+      {
+        "id": "resetAnimBtn",
+        "ref": "ButtonCompClass",
+        "initdata": {
+          "x": 149,
+          "y": 656,
+          "width": 45,
+          "height": 45,
+          "imageWidth": 45,
+          "imageHeight": 45,
+          "imgList": [
+            "backward.png"
+          ]
+        }
+      },
+      {
+        "id": "slider",
+        "ref": "SliderCompClass",
+        "initdata": {
+          "x": 21,
+          "y": 206,
+          "visible": false,
+          "width": 26,
+          "height": 280,
+          "min": 0,
+          "max": 0.07,
+          "decimal": 0,
+          "direction": "vertical"
+        }
+      },
+      {
+        "id": "msgBoxObj",
+        "ref": "MsgBoxClass",
+        "initdata": {
+          "x": 0,
+          "y": 0,
+          "width": 645,
+          "height": 345,
+          "headText": "infoBoxHead",
+          "bodyText": "infoBoxBody",
+          "visible": false
+        }
+      }
+    ],
+    "globalSfx": []
+  }
+}

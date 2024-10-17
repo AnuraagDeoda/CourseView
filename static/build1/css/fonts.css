@@ -1,0 +1,36 @@
+/* A */
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url('fonts/MyriadPro-Regular.woff');
+}
+
+@font-face {
+  font-family: 'Polo22Klett-Regular';
+  src: url('fonts/Polo22Klett-Regular.woff');
+}
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('fonts/OpenSans-Regular.woff');
+}
+
+.clsMyriadPro-Regular{
+  font-family:MyriadPro-Regular;
+}
+
+/* Fonts used for symbols */
+@font-face{
+  font-family: "KlettSymbolDigital-300";
+  src:url("fonts/KlettSymbolDigital-300.woff");
+}
+
+@font-face{
+  font-family: "KlettSymbolDigital-500";
+  src:url("fonts/KlettSymbolDigital-500.woff");
+}
+
+
+@font-face{
+  font-family: "KlettSymbolDigital-700";
+  src:url("fonts/KlettSymbolDigital-700.woff");
+}

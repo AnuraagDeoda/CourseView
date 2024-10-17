@@ -1,0 +1,98 @@
+{
+  "blank": "blank",
+  "xText": "x",
+  "yText": "y",
+  "controllertitle": "Gleichseitige Vielecke (Polygone) konstruieren",
+  "steps": "Steps",
+  "alertHead": "Alert",
+  "alertBody": "Unfortunately, that wasn't right. Try it again.",
+  "completeAlert": "Now you’ve ended the exercise.",
+  "help": "Help",
+  "showSolution": "Show Solution",
+  "radiusQuestion": "Enter the Radius",
+  "nextTask": "Next Task",
+  "point": "Point",
+  "ray": "Ray",
+  "move": "Move",
+  "circle": "Circle",
+  "submit": "Done",
+  "select": "Select",
+  "segment": "Segment",
+  "angleSize": "Angle Size",
+  "perpendicularLine": "Perpendicular",
+  "compass": "Compass",
+  "hideSolution": "Hide Solution",
+  "showAxis": "Show Axis",
+  "showGrid": "Show Grid",
+  "submitAlert": "You have completed all the activities.",
+  "moveInfo": "Click on the drawing area and move it. You can also move corner points of a plan figure.",
+  "pointInfo": "Place a dot in any position.",
+  "rayInfo": "Select or set the starting point and another point of the ray.",
+  "selectInfo": "Select or set both boundary points of the line.",
+  "segmentInfo": "Select or set both boundary points of the line.",
+  "lengthInfo": "Select two points, a distance or a circle.",
+  "angleSizeInfo": "Select a point on the first leg, then the vertex, and specify the desired size. ",
+  "circleInfo": "Select or set the centre point and a point to lie on \nthe circle.",
+  "perpendicularLineInfo": "Choose a line or straight line and a point through which the perpendicular passes.",
+  "compassInfo": "First choose a circle or two points or a distance for the radius and then set the centre point.",
+  "angleQuestion":"Enter Angle",
+  "submitBtn":"Submit",
+  "radio1":"clockwise",
+  "radio2":"anti-clockwise",
+  "centerAngle": "Center Angle:",
+  "centerAngleLHS": "360°",
+  "centerAngleLHSDivideSign": "—",
+  "centerAngleEqualSign": "=",
+  "centerAngleRHS": "",
+  "questions": [
+    {
+      "task": "Konstruiere ein regelmäßiges Fünfeck, sodass die Ecken auf dem Kreis liegen.",
+      "steps": [
+        "Zwei Eckpunkte eines regelmäßigen Vielecks erscheinen immer unter demselben Mittelpunktswinkel (Zentriwinkel). Berechne die Größe des Mittelpunktswinkels. Zeichne den Strahl von M    durch A.",
+        "Nutze den eingezeichneten Strahl und zeichne den ersten Mittelpunktswinkel. Setze den Schnittpunkt des zweiten Schenkels mit dem Kreis. ",
+        "Wiederhole den letzten Schritt so oft, bis du alle Eckpunkte des Vielecks konstruiert hast.",
+        "Verbinde die Punkte zu dem gesuchten Vieleck. "
+      ]
+    },
+    {
+      "task": "Konstruiere ein regelmäßiges Achteck, sodass die Ecken auf dem Kreis liegen.",
+      "steps": [
+        "Zwei Eckpunkte eines regelmäßigen Vielecks erscheinen immer unter demselben Mittelpunktswinkel (Zentriwinkel). Berechne die Größe des Mittelpunktswinkels. Zeichne den Strahl von M    durch A.",
+        "Nutze den eingezeichneten Strahl und zeichne den ersten Mittelpunktswinkel. Setze den Schnittpunkt des zweiten Schenkels mit dem Kreis. ",
+        "Wiederhole den letzten Schritt so oft, bis du alle Eckpunkte des Vielecks konstruiert hast.",
+        "Verbinde die Punkte zu dem gesuchten Vieleck."
+      ]
+    },
+    {
+      "task": "Konstruiere mithilfe des Zirkelwerkzeugs ein regelmäßiges Sechseck, sodass die Ecken auf dem Kreis liegen. ",
+      "steps": [
+        "Zwei Eckpunkte eines regelmäßigen Vielecks erscheinen immer unter demselben Mittelpunktswinkel (Zentriwinkel). Berechne die Größe des Mittelpunktswinkels. Zeichne außerdem den Strahl von M durch A.",
+        "Nutze den eingezeichneten Strahl und zeichne den ersten Mittelpunktswinkel. Setze den Schnittpunkt B des zweiten Schenkels mit dem Kreis.",
+        "Zeichne einen Kreis um B durch\nPunkt A. Setze den zweiten\nSchnittpunkt der beiden\nKreise.",
+        "Wiederhole den letzten Schritt so oft, bis du alle Eckpunkte des Vielecks konstruiert hast.",
+        "Verbinde die Punkte zu dem gesuchten Vieleck."
+      ]
+    },
+    {
+      "task": "Konstruiere mithilfe des Zirkelwerkzeugs ein regelmäßiges Neuneck, sodass die Ecken auf dem Kreis liegen.",
+      "steps": [
+        "Zwei Eckpunkte eines regelmäßigen Vielecks erscheinen immer unter demselben Mittelpunktswinkel (Zentriwinkel). Berechne die Größe des Mittelpunktswinkels. Zeichne außerdem den Strahl von M durch A.",
+        "Nutze den eingezeichneten Strahl und zeichne den ersten Mittelpunktswinkel. Setze den Schnittpunkt B des zweiten Schenkels mit dem Kreis.",
+        "Zeichne einen Kreis um B durch\nPunkt A. Setze den zweiten\nSchnittpunkt der beiden\nKreise.",
+        "Wiederhole den letzten Schritt so oft, bis du alle Eckpunkte des Vielecks konstruiert hast.",
+        "Verbinde die Punkte zu dem gesuchten Vieleck."
+      ]
+    },
+    {
+      "task": "Konstruiere ein regelmäßiges Fünfeck, sodass die Ecken außerhalb des Kreises liegen.",
+      "steps": [
+        "Zwei Eckpunkte eines regelmäßigen Vielecks erscheinen immer unter demselben Mittelpunktswinkel (Zentriwinkel). Berechne die Größe des Mittelpunktswinkels. Zeichne außerdem den Strahl von M durch A.",
+        "Nutze den eingezeichneten Strahl und zeichne den ersten Mittelpunktswinkel. Setze den Schnittpunkt des zweiten Schenkels mit dem Kreis. ",
+        "Wiederhole den letzten Schritt so oft, bis du fünf Punkte auf den Kreis gesetzt hast.",
+        "Zeichne eine Tangente durch\nden Punkt A und eine Tangente\ndurch den Punkt B, indem du\ndie Senkrechten zu den\njeweiligen Strahlen zeichnest.\nSetze den Schnittpunkt der\nTangenten.",
+        "Wiederhole den letzten Schritt so oft, bis du alle Eckpunkte des Vielecks konstruiert hast.",
+        "Verbinde die Schnittpunkte zu dem gesuchten Vieleck."
+      ]
+    }
+  ]
+}

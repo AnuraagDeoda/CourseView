@@ -1,0 +1,14 @@
+/* A */
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url('fonts/MyriadPro-Regular.woff');
+}
+
+@font-face {
+  font-family: 'Polo22Klett-Regular';
+  src: url('fonts/Polo22Klett-Regular.woff');
+}
+
+.clsMyriadPro-Regular{
+  font-family:MyriadPro-Regular;
+}

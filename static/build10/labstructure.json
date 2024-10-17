@@ -1,0 +1,365 @@
+{
+  "labObj": {
+    "title": "title",
+    "lang": "en",
+    "fonts": [
+      "Polo22Klett-Regular"
+    ],
+    "components": [
+      {
+        "id": "panel",
+        "ref": "PanelCompClass",
+        "initdata": {
+          "x": 0,
+          "y": 480,
+          "width": 1280,
+          "height": 240,
+          "headWidth": 1280,
+          "seperatorPadding": 17,
+          "orientation": "h",
+          "headTextX": 32.5,
+          "seperators": [
+            225,
+            973,
+            810
+          ],
+          "headText": "controllertitle",
+          "copyRight": true
+        }
+      },
+      {
+        "id": "changeDirBtn",
+        "ref": "ButtonCompClass",
+        "initdata": {
+          "x": 1132,
+          "y": 535,
+          "width": 125,
+          "height": 45,
+          "visible": false
+        }
+      },
+      {
+        "id": "dropBtn",
+        "ref": "ButtonCompClass",
+        "initdata": {
+          "x": 1132,
+          "y": 599,
+          "width": 125,
+          "height": 45,
+          "text": "drop",
+          "visible": false
+        }
+      },
+      {
+        "id": "jamSonarBtn",
+        "ref": "ButtonCompClass",
+        "initdata": {
+          "x": 1132,
+          "y": 663,
+          "width": 125,
+          "height": 45,
+          "text": "jam",
+          "visible": false
+        }
+      },
+      {
+        "id": "helpBtn",
+        "ref": "ButtonCompClass",
+        "initdata": {
+          "x": 1000,
+          "y": 599,
+          "width": 110,
+          "height": 45,
+          "text": "help",
+          "visible": false
+        }
+      },
+      {
+        "id": "viewObj",
+        "ref": "EcholocationofBatsViewClass",
+        "initdata": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "mathObj",
+        "ref": "EcholocationofBatsMathClass",
+        "initdata": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "batInstr",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 258,
+          "y": 530,
+          "text": "bBatInstr",
+          "visible": false,
+          "fontColor": "rgba(0,0,0,1)",
+          "maxWidth": 590
+        }
+      },
+      {
+        "id": "mothInstr",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 258,
+          "y": 530,
+          "text": "bMothInstr",
+          "visible": false,
+          "fontColor": "rgba(0,0,0,1)",
+          "maxWidth": 590
+        }
+      },
+      {
+        "id": "factsInstr",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 258,
+          "y": 530,
+          "text": "factsInstr",
+          "visible": false,
+          "fontColor": "rgba(0,0,0,1)",
+          "maxWidth": 590
+        }
+      },
+      {
+        "id": "radio",
+        "ref": "RadioButtonCompClass",
+        "initdata": {
+          "x": 30,
+          "y": 543,
+          "margin": 36,
+          "textMaxWidth": 0,
+          "bgColor": "rgba(255, 255, 255, 1)",
+          "downColor": "rgba(255, 102, 0, 1)",
+          "data": [
+            "facts",
+            "bBat",
+            "bMoth"
+          ],
+          "fontSize": 16
+        }
+      },
+      {
+        "id": "joystick",
+        "ref": "JoystickCompClass",
+        "initdata": {
+          "x": 1021,
+          "y": 621,
+          "w": 80,
+          "h": 80,
+          "state": true,
+          "radius": 20,
+          "width": 45,
+          "height": 45,
+          "imageWidth": 27,
+          "imageHeight": 27,
+          "imgList": [
+            "rotateDisabled.png",
+            "rotateDown.png",
+            "rotateUp.png"
+          ]
+        }
+      },
+      {
+        "id": "timerInput",
+        "ref": "InputBoxClass",
+        "initdata": {
+          "x": 320,
+          "y": 664,
+          "width": 55,
+          "height": 35,
+          "fontSize": 18,
+          "borderWidth": 1,
+          "isBold": true,
+          "maxLength": 4,
+          "fillStyle": "rgba(139, 138, 138, 1)",
+          "fontColor": "rgba(255, 255,255, 1)",
+          "disableFillStyle": "rgba(255, 255,255, 1)"
+        }
+      },
+      {
+        "id": "livesInput",
+        "ref": "InputBoxClass",
+        "initdata": {
+          "x": 685,
+          "y": 665,
+          "width": 55,
+          "height": 35,
+          "fontSize": 18,
+          "borderWidth": 1,
+          "showComponent": false,
+          "maxLength": 4,
+          "isBold": true,
+          "fillStyle": "rgba(139, 138, 138, 1)",
+          "fontColor": "rgba(255, 255,255, 1)",
+          "disableFillStyle": "rgba(255, 255,255, 1)"
+        }
+      },
+      {
+        "id": "mothsInput",
+        "ref": "InputBoxClass",
+        "initdata": {
+          "x": 745,
+          "y": 665,
+          "width": 55,
+          "height": 35,
+          "fontSize": 18,
+          "isBold": true,
+          "borderWidth": 1,
+          "maxLength": 4,
+          "fillStyle": "rgba(139, 138, 138, 1)",
+          "fontColor": "rgba(255, 255,255, 1)",
+          "disableFillStyle": "rgba(255, 255,255, 1)"
+        }
+      },
+      {
+        "id": "livesLabel",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 620,
+          "y": 674,
+          "text": "lives",
+          "visible": false,
+          "fontSize": 18,
+          "fontColor": "rgba(0,0,0,1)"
+        }
+      },
+      {
+        "id": "mothsCaughtLabel",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 620,
+          "y": 674,
+          "fontSize": 18,
+          "text": "mothsCaught",
+          "fontColor": "rgba(0,0,0,1)"
+        }
+      },
+      {
+        "id": "timerLabel",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 258,
+          "y": 674,
+          "fontSize": 18,
+          "text": "time",
+          "fontColor": "rgba(0,0,0,1)"
+        }
+      },
+      {
+        "id": "minsLabel",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 385,
+          "y": 674,
+          "text": "mins",
+          "fontColor": "rgba(0,0,0,1)"
+        }
+      },
+      {
+        "id": "dropdown",
+        "ref": "DropDownCompClass",
+        "initdata": {
+          "x": 257,
+          "y": 663,
+          "width": 235,
+          "headHeight": 25,
+          "selectText": "select",
+          "openLabel": "up",
+          "visible": "false",
+          "data": [
+            "velocityFlutter",
+            "elevation",
+            "azimuth",
+            "size",
+            "distance"
+          ]
+        }
+      },
+      {
+        "id": "resetBtn",
+        "ref": "ButtonCompClass",
+        "initdata": {
+          "x": 1206,
+          "y": 631,
+          "width": 45,
+          "height": 45,
+          "imageWidth": 45,
+          "imageHeight": 45,
+          "imgList": [
+            "resetUp.png",
+            "resetDown.png"
+          ]
+        }
+      },
+      {
+        "id": "echolocateBtn",
+        "ref": "ButtonCompClass",
+        "initdata": {
+          "x": 1142,
+          "y": 567,
+          "width": 108,
+          "height": 45,
+          "text": "echolocate"
+        }
+      },
+      {
+        "id": "changeDirButtonLabel",
+        "ref": "LabelCompClass",
+        "initdata": {
+          "x": 1162,
+          "y": 523,
+          "text": "changeDir",
+          "align": "center",
+          "maxWidth": 150,
+          "visible": false,
+          "fontColor": "rgba(255,255,255,1)"
+        }
+      },
+      {
+        "id": "playPauseBtn",
+        "ref": "PlayPauseBtnCompClass",
+        "initdata": {
+          "x": 1142,
+          "y": 631,
+          "imageWidth": 45,
+          "imageHeight": 45,
+          "images": [
+            "playUp.png",
+            "playDown.png",
+            "pauseUp.png",
+            "pauseDown.png"
+          ]
+        }
+      },
+      {
+        "id": "butterflyAnim",
+        "ref": "CreateJSCompClass",
+        "initdata": {
+          "src": [
+            "assets/js/echolocation_in_bats_anim.js"
+          ]
+        }
+      },
+      {
+        "id": "msgBoxObj",
+        "ref": "MsgBoxClass",
+        "initdata": {
+          "x": 0,
+          "y": 0,
+          "width": 645,
+          "height": 345,
+          "headText": "infoBoxHead",
+          "bodyText": "infoBoxBody",
+          "visible": false
+        }
+      }
+    ],
+    "globalSfx": []
+  }
+}

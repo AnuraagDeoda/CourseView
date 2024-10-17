@@ -1,0 +1,18 @@
+{
+  "playerConfigObj": {
+    "qaMode": true,
+    "uiVersion": "1.0.0",
+    "baseWidth": 1280,
+    "baseHeight": 720,
+    "mediaFPS": 24,
+    "klettFontRegular-en": "OpenSans-Regular",
+    "polo22KlettRegular-en": "Polo22Klett-Regular",
+    "bold": "§b",
+    "italic": "§i",
+    "italicbold": "§t",
+    "subscript": "§q",
+    "superscript": "§p",
+    "italicDistance":"§d",
+    "end": "§r"
+  }
+}

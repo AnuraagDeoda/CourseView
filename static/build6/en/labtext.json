@@ -1,0 +1,18 @@
+{
+    "yesBtnTxt": "Yes",
+    "noBtnTxt": "No",
+    "controllertitle": "Controller",
+    "cancave": "Concave lens",
+    "convex": "Convex lens",
+    "Object": "Object size",
+    "distance": "Distance object - lens",
+    "unit": "cm",
+    "imageSize": "Image size",
+    "imageDistance": "Image distance",
+    "checkbox1": "Show ray tracing",
+    "percent": "%",
+    "focalLen": "Focal length",
+    "doubledFocusLen": "Doubled focus length",
+    "infoBoxHead": "Copyright",
+    "infoBoxBody": " "
+}
