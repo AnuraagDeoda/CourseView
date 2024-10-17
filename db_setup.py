@@ -8,8 +8,8 @@ def init_db():
 
         # Define the list of courses
         courses_data = [
-        {"title": 'Klett Classroom Tool', "style": 'Klett', "thumbnail_url": 'img40.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Klett_Classroom/index.html'},
-        {"title": 'Construction tool', "style": 'Klett', "thumbnail_url": 'img25.png', "course_url": 'build8/app.html'},
+        {"title": 'Klett Classroom Tool', "style": 'Klett', "thumbnail_url": 'img40.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Klett_Classroom/index.html','description':'Scenario based animation explaining English words for non english speaking students.'},
+        {"title": 'Construction tool', "style": 'Klett', "thumbnail_url": 'img25.png', "course_url": 'build8/app.html','description':'Usage and meaning of English words in real life scenario.'},
 
         {"title": 'Construct parallelogram', "style": 'Klett', "thumbnail_url": 'img24.png', "course_url": 'build1/app.html'},
         {"title": 'Display Quantities ', "style": 'Klett', "thumbnail_url": 'img9.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Klett_Primary_Math/demo_0_display_quantities/index.html'},
