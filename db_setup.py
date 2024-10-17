@@ -19,7 +19,7 @@ def init_db():
         {"title": 'HMS', "style": 'e-Book Development', "thumbnail_url": 'img1.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/002_hms/'},
         {"title": 'Read Aloud', "style": 'e-Book Development', "thumbnail_url": 'img2.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Encyclopaedia_Britannica/bdl-shapes/'},
         {"title": 'Spanish English', "style": 'e-Book Development', "thumbnail_url": 'img3.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Twin_sister/index.html'},
-        {"title": 'ePub', "style": 'e-Book Development', "thumbnail_url": 'img60.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/CA-ePub_Indesign%20(1)/CC02MM%20RISB%20L11/epub3/OEBPS/launcher.html'},
+        {"title": 'ePub', "style": 'e-Book Development', "thumbnail_url": 'img60.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/CA-ePub_Indesign%20(1)/index.html'},
 
 
         {"title": 'Why do plants grow', "style": 'Digital Lesson Development', "thumbnail_url": 'img4.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/conversion/005_sf/'},
@@ -33,7 +33,7 @@ def init_db():
         {"title": 'Ebook Authoring Platform', "style": 'Technology', "thumbnail_url": 'img43.png', "course_url": 'https://webhost.mitrmedia.com/ftp/aksorn/Others/PL_Object_Editor_ipad.mp4'},
         # Digital Lesson Development
         {"title": 'Enter quantities up to 6/10', "style": 'Accessibility', "thumbnail_url": 'img55.png', "course_url": 'https://webhost.mitrmedia.com/ftp/mitr_sims/Accessibility/Klett/Primary_Practice/b1/practice_1_Enter_quantities_up_to_6_10/'},
-        {"title": 'Writing using evidence from text', "style": 'Professional Education', "thumbnail_url": 'img54.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Writing using evidence from text/ccr2_mod_1/index.html'},
+        {"title": 'Writing using evidence from text', "style": 'Professional Education', "thumbnail_url": 'img54.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Writing using evidence from text/index.html'},
 
 
 
@@ -100,7 +100,7 @@ def init_db():
         
         
         {"title": 'Teacher Training_Classroom management', "style": 'Digital Lesson Development', "thumbnail_url": 'img53.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/teacher/005_tt_002_core'},
-        {"title": 'Writing using evidence from text', "style": 'Digital Lesson Development', "thumbnail_url": 'img54.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Writing using evidence from text/ccr2_mod_1/index.html'},
+        {"title": 'Writing using evidence from text', "style": 'Digital Lesson Development', "thumbnail_url": 'img54.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Writing using evidence from text/index.html'},
 
         # Animation & Artwork Development
         {"title": 'Plate tectonics', "style": 'Klett', "thumbnail_url": 'img14.png', "course_url": 'build5/app.html'},
