@@ -16,6 +16,7 @@ class Course(db.Model):
     style = db.Column(db.String(50), nullable=False)  # Ensure this line exists
     thumbnail_url = db.Column(db.String(200), nullable=False)
     course_url = db.Column(db.String(200), nullable=False)
+    description = db.Column(db.String(500), nullable=True)
     actions = db.relationship('UserAction', backref='course', lazy=True)
     
 
