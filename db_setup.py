@@ -33,7 +33,7 @@ def init_db():
         {"title": 'Ebook Authoring Platform', "style": 'Technology', "thumbnail_url": 'img43.png', "course_url": 'https://webhost.mitrmedia.com/ftp/aksorn/Others/PL_Object_Editor_ipad.mp4'},
         # Digital Lesson Development
         {"title": 'Enter quantities up to 6/10', "style": 'Accessibility', "thumbnail_url": 'img55.png', "course_url": 'https://webhost.mitrmedia.com/ftp/mitr_sims/Accessibility/Klett/Primary_Practice/b1/practice_1_Enter_quantities_up_to_6_10/'},
-        {"title": 'Writing using evidence from text', "style": 'Professional Education', "thumbnail_url": 'img54.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Writing using evidence from text/index.html'},
+        {"title": 'Writing using evidence from text', "style": 'Professional Education', "thumbnail_url": 'img54.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Writing using evidence from text/ccr2_mod_1/index.html'},
 
 
 
@@ -100,7 +100,7 @@ def init_db():
         
         
         {"title": 'Teacher Training_Classroom management', "style": 'Digital Lesson Development', "thumbnail_url": 'img53.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/teacher/005_tt_002_core'},
-        {"title": 'Writing using evidence from text', "style": 'Digital Lesson Development', "thumbnail_url": 'img54.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Writing using evidence from text/index.html'},
+        {"title": 'Writing using evidence from text', "style": 'Digital Lesson Development', "thumbnail_url": 'img54.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Writing using evidence from text/ccr2_mod_1/index.html'},
 
         # Animation & Artwork Development
         {"title": 'Plate tectonics', "style": 'Klett', "thumbnail_url": 'img14.png', "course_url": 'build5/app.html'},
