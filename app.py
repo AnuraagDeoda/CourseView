@@ -53,9 +53,14 @@ def index():
     return render_template(
         'index.html',
         courses_by_style=courses_by_style,
-        email_provided=bool(email)
-        # url_for_with_prefix=url_for_with_prefix
+        email_provided=bool(email),
+        url_for_with_prefix=url_for_with_prefix
     )
+
+@app.route('/data')
+def data():
+    courses = Course.query.all()
+    return render_template('data.html', courses=courses)
 
 
 @app.route('/submit', methods=['POST'])

@@ -18,6 +18,8 @@ class Course(db.Model):
     course_url = db.Column(db.String(200), nullable=False)
     actions = db.relationship('UserAction', backref='course', lazy=True)
     
+
+    
 class UserAction(db.Model):
     __tablename__ = 'user_action'
     id = db.Column(db.Integer, primary_key=True)
