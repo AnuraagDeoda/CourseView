@@ -15,7 +15,7 @@ def init_db():
         {"title": 'Display Quantities ', "style": 'Klett', "thumbnail_url": 'img9.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Klett_Primary_Math/demo_0_display_quantities/index.html','description':'none'},
         
         {"title": 'Projectile Motion', "style": 'Klett', "thumbnail_url": 'img16.png', "course_url": 'build2/app.html','description':'Explore projectile motion though firing a canon'},
-        {"title": 'Digestive systems Klett', "style": 'Klett', "thumbnail_url": 'img61.png', "course_url": 'build2/app.html','description':'none'},
+        {"title": 'Digestive systems Klett', "style": 'Klett', "thumbnail_url": 'img61.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Digestive_System/','description':'none'},
 
         # {"title": 'HMS', "style": 'e-Book Development', "thumbnail_url": 'img1.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/002_hms/','description':'none'},
         {"title": 'Shapes', "style": 'e-Book Development', "thumbnail_url": 'img2.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Encyclopaedia_Britannica/bdl-shapes/','description':'Students discover interesting things about shapes'},
