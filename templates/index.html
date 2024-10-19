@@ -110,15 +110,15 @@
                             data-course-id="{{ course.id }}">
                             <div class="img-wrapper" style="height: 200px;">
                                 <img src="{{ url_for_with_prefix('static', filename=course.thumbnail_url) }}"
-                                    class="d-block w-100 h-100 object-fit-cover" alt="{{ course.title }}">
-                                <!-- <img src="{{ url_for_with_prefix('static', filename=course.thumbnail_url) }}" class="d-block w-100 h-100 object-fit-cover" alt="{{ course.title }}"> -->
+                                    class="d-block w-100 h-100 object-fit-cover demoImage" alt="{{ course.title }}">
+                                <!-- - <img src="{{ url_for_with_prefix('static', filename=course.thumbnail_url) }}" class="d-block w-100 h-100 object-fit-cover" alt="{{ course.title }}"> -->
                             </div>
                             <!-- <div class="subtitle bg-light text-secondary mb-1 p-2">
                                 <span class="px-1">♥︎</span>
                                 {{course.style}}
                             </div> -->
                             <div class="bg-light mb-1 p-2 fw-bold py-3" style="color: #005A8C; height: 80px;">
-                                <span class="">{{ course.title }}</span>
+                                <span class="demoTitle">{{ course.title }}</span>
                             </div>
                             <div class="subtitle  flex-grow-1  bg-light text-secondary p-2">
                                 {{course.description}}
@@ -298,6 +298,7 @@
         <!-- Custom JS -->
         <script>
             $(document).ready(function () {
+			checkForDuplicateCourses();
                 const params = new URLSearchParams(window.location.search);
         const selected = params.get('selected');
 
@@ -415,11 +416,16 @@
                     var style = $(this).data('style');
                     if (style === 'all') {
                         $('.course-item').show();
+						checkForDuplicateCourses();
                     } else {
                         $('.course-item').hide();
                         $('.course-item[data-style="' + style + '"]').show();
     
                     }
+					
+					
+					
+					
                     // if (style === 'all') {
                     //     $('.course-item').show();
                     //     $('.filter-btn').removeClass('active')
@@ -485,6 +491,29 @@
                     });
                 })
             });
+			
+			function checkForDuplicateCourses(){
+				var _courseItems = $('.course-item');
+				var imgArr = [];
+				for(var i=0;i<_courseItems.length;i++)
+				{
+					var _demoTitle = $(_courseItems[i]).find(".demoTitle").html();
+					var _demoImage = $(_courseItems[i]).find(".demoImage").attr("src");
+					if(imgArr.indexOf(_demoImage) != -1)
+					{
+						//console.log("duplicate found ==================");
+						$(_courseItems[i]).hide();
+					}
+					else{
+						imgArr.push(_demoImage);
+					}
+					
+					//console.log(i," ====== ",_demoTitle);
+					//console.log("_demoImage = ",_demoImage);
+					
+				}
+			}
+			
         </script>
 
 </body>
