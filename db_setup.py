@@ -23,7 +23,7 @@ def init_db():
         {"title": 'Balancing Chemical Equations', "style": 'Klett', "thumbnail_url": 'img18.png', "course_url": 'build3/app.html','description':'Balancing equation by increasing/decreasing no. of moelcules'},
         {"title": 'Alkaline metals and water', "style": 'Klett', "thumbnail_url": 'img19.png', "course_url": 'build4/app.html','description':'Explore the change of pH of water when mixed with different alkaline metals'},
         {"title": 'Types of teeth', "style": 'Klett', "thumbnail_url": 'img22.png', "course_url": 'build7/app.html','description':'Learn teeth type of different animals and how it correlates to their nutrition source'},
-        {"title": 'Echolocation in bats', "style": 'Klett', "thumbnail_url": 'img58.png', "course_url": 'build10/app.html','description':'none'},
+        {"title": 'Echolocation in bats', "style": 'Klett', "thumbnail_url": 'img58.png', "course_url": 'build10/app.html','description':'Bats using echolocation to find food in the dark by emitting ultrasound and listening to the echoes'},
         {"title": 'Digestive systems', "style": 'Klett', "thumbnail_url": 'Digestive_system_klett.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Digestive_System/','description':'Learn about what are the organs in our digestive system and how any food is digested.'},
         
         # Ebooks
@@ -78,7 +78,7 @@ def init_db():
         
         
         # Animation & Artwork
-        {"title": 'English Words 2', "style": 'Animation & Artwork', "thumbnail_url": 'img33.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Animation/1%20G6_P2_U5_L1_learning_1/','description':'Usage and meaning of English words in real life scenario.'},
+        {"title": 'English Words', "style": 'Animation & Artwork', "thumbnail_url": 'img33.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Animation/1%20G6_P2_U5_L1_learning_1/','description':'Usage and meaning of English words in real life scenario.'},
         {"title": 'Circumference', "style": 'Animation & Artwork', "thumbnail_url": 'img39.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Marashall_Cavendish/Circumference_of_a_Circle-Discover/DS_Maths_G6_04_01_D_2/','description':'Concept of circumference of a circle for primary grade'},
         {"title": 'Phonics', "style": 'Animation & Artwork', "thumbnail_url": 'img37.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Eng_Video_V03/Eng_video_v03/index.html','description':'Teaching phonics'},
         {"title": 'CLE Bonjour', "style": 'Animation & Artwork', "thumbnail_url": 'img30.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/CLE_U0_L2_Bonjour_v3/index.html','description':'Pre-primary songs in French.'},
@@ -95,11 +95,11 @@ def init_db():
         # {"title": 'Kidney_3D model', "style": 'Animation & Artwork', "thumbnail_url": 'img51.png', "course_url": 'https://webhost.mitrmedia.com/ftp/aksorn/3D_Object/?organ=kidney_new','description':'none'},
         
         # Language Learning
-        # {"title": 'Sadlier Build a Sentence', "style": 'Language Learning', "thumbnail_url": 'img45.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Build_a_Sentence/','description':'none'},
+        {"title": 'Build a sentence', "style": 'Language Learning', "thumbnail_url": 'img45.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Build_a_Sentence/','description':'Fully accessible game engine for students to build sentences'},
         {"title": 'ELT Word Identification', "style": 'Language Learning', "thumbnail_url": 'img48.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/her/episode_36_segment_3/','description':'Listen to the sound and select the correct word'},
         {"title": 'CLE Grrr..on n aime', "style": 'Language Learning', "thumbnail_url": 'img46.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/CLE_U3_L2_Grr_v3/index.html','description':'Pre-primary songs in French.'},
         {"title": 'Short and Long', "style": 'Language Learning', "thumbnail_url": 'img49.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/ArbInteractivity03_v07/Arabic_interactivity_03/index.html','description':'Listen and look at the words and sort them as long and short sounds.'},
-        {"title": 'English Words 2', "style": 'Language Learning', "thumbnail_url": 'img33.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Animation/1%20G6_P2_U5_L1_learning_1/','description':'Usage and meaning of English words in real life scenario.'},
+        {"title": 'English Words', "style": 'Language Learning', "thumbnail_url": 'img33.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Animation/1%20G6_P2_U5_L1_learning_1/','description':'Usage and meaning of English words in real life scenario.'},
         {"title": 'Phonics', "style": 'Language Learning', "thumbnail_url": 'img37.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Eng_Video_V03/Eng_video_v03/index.html','description':'Teaching phonics'},
         {"title": 'English Words', "style": 'Language Learning', "thumbnail_url": 'img38.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Animation/G9_P2_U9_L1_RP_A/','description':'Usage and meaning of English words in real life scenario.'},
         
@@ -127,10 +127,14 @@ def init_db():
 
         # Accessibility
         #{"title": 'Enter quantities up to 6/10', "style": 'Accessibility', "thumbnail_url": 'img55.png', "course_url": 'https://webhost.mitrmedia.com/ftp/mitr_sims/Accessibility/Klett/Primary_Practice/b1/practice_1_Enter_quantities_up_to_6_10/','description':'none'},
-        # {"title": 'Sadlier Build a Sentence', "style": 'Accessibility', "thumbnail_url": 'img45.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Build_a_Sentence/','description':'none'},
-        {"title": 'Word game', "style": 'Accessibility', "thumbnail_url": 'img57.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Sadlier/Crossword/Responsive_Beta/R3/index.html','description':'none'}, 
-        # {"title": 'Construct equilateral polygons (polygons)', "style": 'Accessibility', "thumbnail_url": 'img56.png', "course_url": 'build9/app.html','description':'none'},
+        {"title": 'Identify quantities up to 6', "style": 'Accessibility', "thumbnail_url": 'img55.png', "course_url": 'https://webhost.mitrmedia.com/ftp/mitr_sims/Accessibility/Klett/Primary_Practice/b1/practice_1_Enter_quantities_up_to_6_10/','description':'Student needs to identify the quantities displayed up till 6'},
+        {"title": 'Projectile Motion', "style": 'Accessibility', "thumbnail_url": 'img16.png', "course_url": 'build2/app.html','description':'Explore projectile motion though firing a canon'},
         {"title": 'Word game', "style": 'Accessibility', "thumbnail_url": 'img28.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Sadlier/Sadlier_VWBasketball/R1/index.html','description':'A game designed to read the clue and guess the word by selecting appropriate letters'},
+        {"title": 'Word game', "style": 'Accessibility', "thumbnail_url": 'img57.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Sadlier/Crossword/Responsive_Beta/R3/index.html','description':'Crossword game engine for students to identify the words based on clues'},
+        
+        {"title": 'Build a sentence', "style": 'Accessibility', "thumbnail_url": 'img45.png', "course_url": 'https://demos.mitrmedia.com/demo-zip/demo/Build_a_Sentence/','description':'Fully accessible game engine for students to build sentences'},
+        # {"title": 'Construct equilateral polygons (polygons)', "style": 'Accessibility', "thumbnail_url": 'img56.png', "course_url": 'build9/app.html','description':'none'},
+        
 
 ]
 
