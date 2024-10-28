@@ -28,20 +28,22 @@ This Flask app allows you to create and manage a SQLite database called `app.db`
    python3 -m venv venv
    source venv/bin/activate
    ```
+   For windows - use this command
+   venv\Scripts\activate
 
-3. Install the required Python packages:
+4. Install the required Python packages:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-4. Run the database setup script:
+5. Run the database setup script:
 
    ```bash
    python db_setup.py
    ```
 
-5. Start the Flask app:
+6. Start the Flask app:
 
    ```bash
    python app.py
